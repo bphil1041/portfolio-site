@@ -5,6 +5,8 @@
     background-color: #333;
     color: white;
     padding: 10px 20px;
+    font-family: monospace;
+    font-size: large;
 }
 
 .navbar-brand {
@@ -27,4 +29,12 @@
 
 .navbar-nav a:hover {
     text-decoration: underline;
+}
+
+.ml-auto {
+    justify-content: center;
+}
+
+.nav-link {
+    margin: 10px;
 }
