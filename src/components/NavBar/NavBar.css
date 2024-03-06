@@ -1,13 +1,13 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    /* Ensure items are evenly spaced */
     align-items: center;
     background-color: black;
     color: navajowhite;
     padding: 10px 20px;
     font-family: monospace;
     font-size: large;
-
 }
 
 .navbar-brand {
@@ -33,8 +33,9 @@
     text-decoration: underline;
 }
 
-.ml-auto {
-    justify-content: center;
+/* Remove ml-auto and add a new class to push navbar to the right */
+.navbar-right {
+    margin-left: auto;
 }
 
 .nav-link {
