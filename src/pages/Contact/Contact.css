@@ -1,0 +1,27 @@
+body {
+    font-family: monospace;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-container h1 {
+    font-size: 2em;
+}
+
+.contact-container p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}

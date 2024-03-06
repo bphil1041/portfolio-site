@@ -2,15 +2,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: black;
+    color: navajowhite;
     padding: 10px 20px;
     font-family: monospace;
     font-size: large;
+
 }
 
 .navbar-brand {
     font-size: 1.5rem;
+    color: navajowhite;
 }
 
 .navbar-nav {
@@ -23,7 +25,7 @@
 }
 
 .navbar-nav a {
-    color: white;
+    color: navajowhite;
     text-decoration: none;
 }
 

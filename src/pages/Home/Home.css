@@ -1,3 +1,7 @@
-body {
-    font-family: monospace;
+.home-title {
+    font-size: 7rem;
+}
+
+.home-subtitle {
+    font-size: 2rem;
 }
