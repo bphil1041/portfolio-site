@@ -3,3 +3,17 @@
     max-height: 80vh;
     margin: 0 auto;
 }
+
+.modalButton {
+    background-color: black;
+    color: navajowhite;
+    font-family: 'Pixelify Sans';
+}
+
+.modalTitle {
+    font-family: 'Pixelify Sans';
+}
+
+.modalBody {
+    font-family: 'Pixelify Sans';
+}
