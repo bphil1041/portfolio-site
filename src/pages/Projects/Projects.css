@@ -12,8 +12,27 @@
 
 .modalTitle {
     font-family: 'Pixelify Sans';
+    color: navajowhite;
+    background-color: black;
 }
 
 .modalBody {
     font-family: 'Pixelify Sans';
+    color: navajowhite;
+    background-color: black;
+
+}
+
+.card-text {
+    color: navajowhite;
+    font-size: 1.5rem;
+}
+
+.card-body {
+    background-color: black;
+
+}
+
+.card-title {
+    color: navajowhite;
 }
