@@ -2,6 +2,7 @@
   text-align: center;
   color: navajowhite;
   font-family: 'Pixelify Sans';
+  text-shadow: #FC0 1px 0 10px;
 }
 
 
@@ -47,7 +48,7 @@ body {
 }
 
 body {
-  background: linear-gradient(90deg, #6d0083, #160f7a, #067d10, #26a5a5);
+  background: linear-gradient(90deg, #6d0083, #160f7a, #7d0909, #990aa4);
   background-size: 400% 400%;
   animation: gradient 50s ease infinite;
 }
