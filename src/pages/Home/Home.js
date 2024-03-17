@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import BenPhoto from '../../assets/60635.png';
+import BenPhoto from '../../assets/IMG_0346 2.png';
 
 function Home() {
     return (
