@@ -10,8 +10,11 @@
 .BenPhoto {
     border-radius: 50%;
     margin-bottom: 30px;
+    border-style: solid;
+    height: 400px;
+    width: auto;
 
-    box-shadow: #FC0 1px 0 25px;
+    box-shadow: #FC0 1px 0 30px;
 }
 
 p {
