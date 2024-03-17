@@ -36,3 +36,9 @@
 .card-title {
     color: navajowhite;
 }
+
+.project-card {
+    border-color: navajowhite;
+    border-style: ridge;
+    border-width: 4px;
+}
