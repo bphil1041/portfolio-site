@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   color: navajowhite;
-  font-family: 'Pixelify Sans';
+  font-family: 'Calistoga';
   text-shadow: #FC0 1px 0 10px;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 body {
-  background: linear-gradient(90deg, #6e0101, #9d168d, #49097d, #0a19a4, #1088a9, #1a6e01);
+  background: linear-gradient(90deg, #0a024f, #22024f, #49024f, #4f0012);
   background-size: 400% 400%;
   animation: gradient 40s ease infinite;
 }
