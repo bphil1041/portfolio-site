@@ -5,7 +5,7 @@ import './NavBar.css'
 
 function NavBar() {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="black" variant="dark" expand="lg">
             <Navbar.Brand as={Link} to="/home">Ben Phillips - Web Dev</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

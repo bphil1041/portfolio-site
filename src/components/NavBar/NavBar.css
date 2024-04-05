@@ -8,6 +8,9 @@
     padding: 10px 20px;
     font-family: 'Calistoga';
     font-size: large;
+    border-style: ridge;
+    border-color: navajowhite;
+    border-width: 2px;
 }
 
 .navbar-brand {
