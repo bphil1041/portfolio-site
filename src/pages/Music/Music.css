@@ -1,0 +1,22 @@
+.music-card {
+    padding-top: 20px;
+
+}
+
+.transparent-card {
+    background-color: transparent;
+    border: none;
+}
+
+.transparent-card-body {
+    background-color: transparent;
+    border: none;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.sub-title {
+    padding-bottom: 20px;
+}

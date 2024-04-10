@@ -1,16 +1,13 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    /* Ensure items are evenly spaced */
     align-items: center;
-    background-color: black;
     color: navajowhite;
     padding: 10px 20px;
     font-family: 'Calistoga';
     font-size: large;
-    border-style: ridge;
-    border-color: navajowhite;
     border-width: 2px;
+
 }
 
 .navbar-brand {
