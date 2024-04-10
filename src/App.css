@@ -48,7 +48,7 @@ body {
 }
 
 body {
-  background: linear-gradient(90deg, #000000, #06000e, #2e013e, #060029);
+  background: linear-gradient(90deg, #000000, #0f0015, #010029, rgb(24, 0, 23));
   background-size: 400% 400%;
   animation: gradient 40s ease infinite;
 }
