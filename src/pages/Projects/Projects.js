@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Col, Row, Modal, Button } from 'react-bootstrap';
+import DOMPurify from 'dompurify';
 import './Projects.css';
 import project1Image from '../../assets/Screenshot 2024-03-05 at 11.46.28 PM 2.png';
 import project2Image from '../../assets/myFlixScreenshot.png';
@@ -30,7 +31,7 @@ function Projects() {
                         <Card className="project-card" onClick={() => handleProjectClick(project)}>
                             <Card.Img variant="top" src={project.image} />
                             <Card.Body>
-                                <Card.Title>{project.name}</Card.Title>
+                                <Card.Title className='card-title'>{project.name}</Card.Title>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -42,7 +43,7 @@ function Projects() {
                 </Modal.Header>
                 <Modal.Body className='modalBody'>
                     <img src={selectedProject?.image} alt={selectedProject?.name} className="modal-image" />
-                    <p dangerouslySetInnerHTML={{ __html: selectedProject?.description }}></p>
+                    <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(selectedProject?.description) }}></p>
                     {/* Add more details about the project */}
                 </Modal.Body>
                 <Modal.Footer>
