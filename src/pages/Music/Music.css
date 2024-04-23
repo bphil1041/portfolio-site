@@ -9,12 +9,14 @@
 }
 
 .transparent-card-body {
-    background-color: transparent;
-    border: none;
+    background-color: black;
+    border: solid;
+    border-color: navajowhite;
 }
 
 .title {
     padding-bottom: 20px;
+    font-size: 7rem;
 }
 
 .sub-title {
