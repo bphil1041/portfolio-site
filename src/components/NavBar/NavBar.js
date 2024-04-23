@@ -9,7 +9,7 @@ function NavBar() {
     return (
 
         <Navbar bg="transparent" variant="dark" expand="lg">
-            <Navbar.Brand as={Link} to="/home">Ben Phillips - Web Dev / Music</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/home">Ben Phillips</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="navbar-right"> {/* Use navbar-right class to push Nav items to the right */}
