@@ -16,6 +16,7 @@
     transition: transform 0.2s;
     cursor: pointer;
     border-radius: 1%;
+    overflow: hidden;
 }
 
 .transparent-card-body:hover {
