@@ -71,9 +71,9 @@ function Music() {
                         />
                     </Card>
                 ))}
-                <Card className="transparent-card">Placeholder</Card>
+                <Card className="transparent-card"></Card>
                 <Card className="transparent-card">
-                    <Card.Body className="transparent-card-body"
+                    <Card.Body className="transparent-card-body youtube"
                         dangerouslySetInnerHTML={{
                             __html: sanitizedYoutubeIframeHtml,
                         }}

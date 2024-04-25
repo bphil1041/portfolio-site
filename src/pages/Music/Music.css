@@ -12,6 +12,14 @@
     background-color: black;
     border: solid;
     border-color: navajowhite;
+    border-width: 2px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    border-radius: 1%;
+}
+
+.transparent-card-body:hover {
+    transform: scale(1.05);
 }
 
 .title {
@@ -21,4 +29,8 @@
 
 .sub-title {
     padding-bottom: 20px;
+}
+
+.youtube {
+    margin-bottom: 50px;
 }

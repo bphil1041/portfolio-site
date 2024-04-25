@@ -6,7 +6,6 @@ import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import Music from './pages/Music/Music';
-import ImageOne from './components/Parallax/ImageOne';
 
 function App() {
   return (
@@ -17,10 +16,10 @@ function App() {
         <NavBar />
 
         <Routes>
-          <Route path="/music" element={<Music />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="portfolio-site/music" element={<Music />} />
+          <Route path="portfolio-site/projects" element={<Projects />} />
+          <Route path="portfolio-site/contact" element={<Contact />} />
+          <Route path="portfolio-site/home" element={<Home />} />
 
         </Routes>
 

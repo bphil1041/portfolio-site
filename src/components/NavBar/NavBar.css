@@ -33,7 +33,6 @@
     text-decoration: underline;
 }
 
-/* Remove ml-auto and add a new class to push navbar to the right */
 .navbar-right {
     margin-left: auto;
 }
