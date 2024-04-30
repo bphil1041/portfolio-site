@@ -25,6 +25,7 @@ function Projects() {
 
     return (
         <>
+            <h1>Projects</h1>
             <Row xs={1} md={2} lg={3} className="g-4">
                 {projects.map((project) => (
                     <Col key={project.id}>
