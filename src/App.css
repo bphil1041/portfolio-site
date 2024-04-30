@@ -2,7 +2,7 @@
   text-align: center;
   color: navajowhite;
   font-family: 'Calistoga';
-  text-shadow: #FC0 1px 0 5px;
+
 }
 
 
@@ -47,9 +47,9 @@
 
 
 body {
-  background: linear-gradient(45deg, #000000, #39084d, #0f0e6a, #085458);
+  background: linear-gradient(90deg, #000000, #050018, #00081c, #24003a);
   background-size: 400% 400%;
-  animation: gradient 25s ease infinite;
+  animation: gradient 50s ease infinite;
 }
 
 @keyframes gradient {
