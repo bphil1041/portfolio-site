@@ -2,7 +2,6 @@
   text-align: center;
   color: navajowhite;
   font-family: 'Calistoga';
-  text-shadow: 2px 2px #558ABB;
   position: relative;
 }
 
@@ -109,7 +108,7 @@ body {
 }
 
 .sparkle-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
