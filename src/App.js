@@ -10,14 +10,15 @@ import styled from 'styled-components';
 
 
 const CursorWrapper = styled.div`
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: navajowhite;
     border-radius: 50%;
     position: absolute;
     pointer-events: none;
     box-shadow: #FC0 1px 0 50px;
     opacity: .2;
+    z-index: 1;
 `;
 
 const Cursor = ({ delay }) => {
@@ -46,27 +47,29 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div className="sparkle-container">
+          {[...Array(350)].map((_, index) => (
+            <div key={index} className="sparkle" style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 500}%` }} />
+          ))}
+        </div>
+
         <NavBar />
         <Cursor delay={100} />
         <Cursor delay={400} />
-        <Cursor delay={700} />
-        <Cursor delay={1000} />
-        <Cursor delay={1300} />
-        <Cursor delay={3000} />
 
-
-
-
-        <Routes>
-          <Route path="portfolio-site/music" element={<Music />} />
-          <Route path="portfolio-site/projects" element={<Projects />} />
-          <Route path="portfolio-site/contact" element={<Contact />} />
-          <Route path="portfolio-site/home" element={<Home />} />
-          <Route path="portfolio-site/" element={<Home />} />
-        </Routes>
+        <div className="content-container">
+          <Routes>
+            <Route path="portfolio-site/music" element={<Music />} />
+            <Route path="portfolio-site/projects" element={<Projects />} />
+            <Route path="portfolio-site/contact" element={<Contact />} />
+            <Route path="portfolio-site/home" element={<Home />} />
+            <Route path="portfolio-site/" element={<Home />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
 }
+
 
 export default App;

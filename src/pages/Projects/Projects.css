@@ -8,6 +8,8 @@
     background-color: black;
     color: navajowhite;
     font-family: 'Calistoga';
+    width: 100%;
+    border-color: navajowhite;
 }
 
 .modalTitle {
@@ -20,7 +22,8 @@
     font-family: 'Calistoga';
     color: navajowhite;
     background-color: black;
-    text-shadow: #FC0 1px 0 10px;
+    font-size: 10rem;
+
 }
 
 .card-text {
@@ -43,13 +46,25 @@
     margin-top: 20px;
     height: 400px;
     overflow: hidden;
+    background-color: black;
 }
 
 .project-card {
     transition: transform 0.2s;
     cursor: pointer;
+    background-color: black;
 }
 
 .project-card:hover {
     transform: scale(1.05);
+}
+
+.modal-footer {
+    background-color: black;
+    border-color: navajowhite;
+}
+
+.modal-header {
+    background: black;
+    border-color: navajowhite;
 }

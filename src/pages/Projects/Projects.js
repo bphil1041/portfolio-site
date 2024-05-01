@@ -5,6 +5,7 @@ import './Projects.css';
 import project1Image from '../../assets/Screenshot 2024-03-05 at 11.46.28 PM 2.png';
 import project2Image from '../../assets/myFlixScreenshot.png';
 import project4Image from '../../assets/Meet App.png';
+import project5Image from '../../assets/Gengar.png';
 
 function Projects() {
     const [showModal, setShowModal] = React.useState(false);
@@ -15,6 +16,8 @@ function Projects() {
         { id: 2, name: 'myFlix (front end)', image: project2Image, description: 'The front end of a full-stack movie app called where you can learn about my favorite movies. Features include; sign up, login, logout, edit user info, delete account, filter movies by genre / director, and read individual movie info. <a href="https://myflix-bp.netlify.app/login" target="_blank" rel="noreferrer">  Click here </a> to check it out. ' },
         { id: 3, name: 'myFlix (back end)', image: 'project3.jpg', description: 'Description of Project 3' },
         { id: 4, name: 'Meet App', image: project4Image, description: 'A serverless, progressive React Web App (PWA) using TDD technique. View the app <a href="https://bphil1041.github.io/meet-app/" target="_blank" rel="noreferrer"> here</a>' },
+        { id: 5, name: 'Pokedex', image: project5Image, description: 'A simple Pokédex application that displays basic Pokémon information. Javascript, html, and CSS. View the app <a href="https://github.com/bphil1041/Pokedex" target="_blank" rel="noreferrer"> here</a>' },
+
         // Add more projects as needed
     ];
 
