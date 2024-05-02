@@ -45,7 +45,7 @@ const Cursor = ({ delay }) => {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio-site">
       <div className="App">
         <div className="sparkle-container">
           {[...Array(350)].map((_, index) => (
