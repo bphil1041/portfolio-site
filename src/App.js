@@ -45,7 +45,7 @@ const Cursor = ({ delay }) => {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio-site">
       <div className="App">
         <div className="sparkle-container">
           {[...Array(350)].map((_, index) => (
@@ -59,15 +59,16 @@ function App() {
 
         <div className="content-container">
           <Routes>
-            <Route path="portfolio-site/music" element={<Music />} />
-            <Route path="portfolio-site/projects" element={<Projects />} />
-            <Route path="portfolio-site/contact" element={<Contact />} />
-            <Route path="portfolio-site/home" element={<Home />} />
-            <Route path="portfolio-site/" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/home" element={<Home />} />
           </Routes>
         </div>
       </div>
     </Router>
+
   );
 }
 
