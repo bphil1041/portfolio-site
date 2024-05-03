@@ -1,5 +1,5 @@
 .home-title {
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: bold;
     text-shadow: 3px 3px #558ABB;
 }
@@ -17,7 +17,7 @@
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    height: 400px;
+    height: 300px;
     width: auto;
 
 }
@@ -27,5 +27,5 @@ p {
 }
 
 .about-me {
-    margin: 0 25vw 0 25vw;
+    margin: 0 15vw 0 15vw;
 }
