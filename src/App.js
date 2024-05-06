@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
@@ -6,8 +6,7 @@ import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import Music from './pages/Music/Music';
-import styled from 'styled-components';
-
+import styled, { keyframes } from 'styled-components';
 
 const CursorWrapper = styled.div`
     width: 30px;
@@ -43,34 +42,106 @@ const Cursor = ({ delay }) => {
   );
 };
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const FadeIn = styled.div`
+  opacity: 0;
+  animation: ${fadeIn} 2.5s forwards;
+`;
+
+const sparklePulse = keyframes`
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+`;
+
+const SparkleContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200%;
+  pointer-events: none;
+  z-index: -1;
+`;
+
+const Sparkle = styled.div`
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: navajowhite;
+  animation: ${sparklePulse} 2s linear infinite, sparkleScroll 50s linear infinite;
+  opacity: 0;
+
+  @keyframes sparkleScroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100vh);
+    }
+  }
+`;
+
 function App() {
   return (
     <Router basename="/portfolio-site">
       <div className="App">
-        <div className="sparkle-container">
-          {[...Array(350)].map((_, index) => (
-            <div key={index} className="sparkle" style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 500}%` }} />
+        <SparkleContainer>
+          {[...Array(150)].map((_, index) => (
+            <Sparkle
+              key={index}
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 2}s`,
+              }}
+            />
           ))}
-        </div>
+        </SparkleContainer>
 
         <NavBar />
         <Cursor delay={100} />
         <Cursor delay={400} />
+        <Cursor delay={700} />
+
 
         <div className="content-container">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/music" element={<Music />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<HomeWithFade />} />
+            <Route path="/home" element={<HomeWithFade />} />
+            <Route path="/music" element={<MusicWithFade />} />
+            <Route path="/projects" element={<ProjectsWithFade />} />
+            <Route path="/contact" element={<ContactWithFade />} />
           </Routes>
         </div>
       </div>
     </Router>
-
   );
 }
 
+const withFade = (Component) => () => (
+  <FadeIn>
+    <Component />
+  </FadeIn>
+);
+
+const HomeWithFade = withFade(Home);
+const MusicWithFade = withFade(Music);
+const ProjectsWithFade = withFade(Projects);
+const ContactWithFade = withFade(Contact);
 
 export default App;
