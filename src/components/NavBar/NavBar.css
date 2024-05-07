@@ -23,6 +23,8 @@
 .navbar-nav {
     display: flex;
     list-style-type: none;
+    flex-wrap: wrap;
+    /* Allow items to wrap onto a new line */
 }
 
 .navbar-nav li {
