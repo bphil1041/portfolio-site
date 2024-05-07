@@ -9,16 +9,19 @@ import Music from './pages/Music/Music';
 import styled, { keyframes } from 'styled-components';
 
 const CursorWrapper = styled.div`
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: navajowhite;
     border-radius: 50%;
+    border-color: #558ABB;
+    border-width: 10px;
     position: absolute;
     pointer-events: none;
-    box-shadow: #FC0 1px 0 50px;
-    opacity: .2;
+    box-shadow: 0 0 60px navajowhite; 
+    opacity: .55;
     z-index: 1;
 `;
+
 
 const Cursor = ({ delay }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -114,9 +117,8 @@ function App() {
         </SparkleContainer>
 
         <NavBar />
-        <Cursor delay={100} />
-        <Cursor delay={400} />
-        <Cursor delay={700} />
+        <Cursor delay={50} />
+
 
 
         <div className="content-container">
