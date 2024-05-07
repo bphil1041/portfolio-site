@@ -1,8 +1,9 @@
 .App {
   text-align: center;
   color: navajowhite;
-  font-family: 'Calistoga';
+  font-family: roboto;
   position: relative;
+  font-weight: bold;
 }
 
 

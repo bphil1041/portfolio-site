@@ -4,9 +4,9 @@
     align-items: center;
     color: navajowhite;
     padding: 10px 20px;
-    font-family: 'Calistoga';
+    font-family: roboto;
     font-size: large;
-    z-index: 1000;
+    z-index: 2;
     border-color: navajowhite;
     border-width: 2px;
     border-style: solid;
