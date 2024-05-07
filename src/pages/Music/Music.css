@@ -6,6 +6,7 @@
 .transparent-card {
     background-color: transparent;
     border: none;
+
 }
 
 .transparent-card-body {
@@ -17,6 +18,7 @@
     cursor: pointer;
     border-radius: 1%;
     overflow: hidden;
+    margin: 3.5%;
 }
 
 .transparent-card-body:hover {
@@ -25,7 +27,7 @@
 
 .title {
     padding-bottom: 20px;
-    font-size: 7rem;
+    font-size: 4em;
     text-shadow: 3px 3px #558ABB;
 
 }
