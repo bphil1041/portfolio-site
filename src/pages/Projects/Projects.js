@@ -34,9 +34,9 @@ function Projects() {
                 {projects.map((project) => (
                     <Col key={project.id}>
                         <Card className="project-card" onClick={() => handleProjectClick(project)}>
-                            <Card.Img variant="top" src={project.image} />
                             <Card.Body>
                                 <Card.Title className='card-title'>{project.name}</Card.Title>
+                                <Card.Img variant="top" src={project.image} />
                             </Card.Body>
                         </Card>
                     </Col>
@@ -58,6 +58,7 @@ function Projects() {
             </Modal>
         </>
     );
+
 }
 
 export default Projects;
