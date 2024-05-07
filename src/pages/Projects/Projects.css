@@ -12,6 +12,14 @@
     border-color: navajowhite;
 }
 
+.modalButton:hover {
+    background-color: maroon;
+    color: navajowhite;
+    border-color: navajowhite;
+    transform: scale(1.1);
+}
+
+
 .modalTitle {
     font-family: 'Calistoga';
     color: navajowhite;
@@ -47,16 +55,14 @@
     height: 400px;
     overflow: hidden;
     background-color: black;
-}
-
-.project-card {
     transition: transform 0.2s;
     cursor: pointer;
-    background-color: black;
+    margin: 3.5%
 }
 
 .project-card:hover {
     transform: scale(1.05);
+
 }
 
 .modal-footer {
@@ -70,7 +76,7 @@
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 4em;
     text-shadow: 3px 3px #558ABB;
 
 }
