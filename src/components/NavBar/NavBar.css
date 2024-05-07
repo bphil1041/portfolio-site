@@ -6,13 +6,16 @@
     padding: 10px 20px;
     font-family: 'Calistoga';
     font-size: large;
-    border-width: 2px;
+    z-index: 1000;
 
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 3em;
     color: navajowhite;
+    text-shadow: 2.5px 2.5px #558ABB;
+
+
 }
 
 .navbar-nav {
