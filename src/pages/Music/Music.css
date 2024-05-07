@@ -1,8 +1,3 @@
-.music-card {
-    padding-top: 20px;
-
-}
-
 .transparent-card {
     background-color: transparent;
     border: none;
@@ -26,7 +21,6 @@
 }
 
 .title {
-    padding-bottom: 20px;
     font-size: 4em;
     text-shadow: 3px 3px #558ABB;
 

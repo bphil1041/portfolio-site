@@ -53,12 +53,15 @@ body {
   height: 100vh;
   width: 100%;
   overflow-y: scroll;
-  max-height: calc(100vh - 60px);
-  /* Adjust max-height based on your needs */
 }
 
 html,
 body,
 #root {
   height: 100%;
+}
+
+.content-container {
+  padding-top: 50px;
+
 }
