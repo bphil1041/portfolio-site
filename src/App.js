@@ -29,7 +29,7 @@ const Cursor = ({ delay }) => {
   useEffect(() => {
     const handleMouseMove = (e) => {
       setTimeout(() => {
-        setPosition({ x: e.pageX, y: e.pageY });
+        setPosition({ x: e.pageX - 20, y: e.pageY - 20 });
       }, delay);
     };
 
@@ -118,7 +118,7 @@ function App() {
         </SparkleContainer>
 
         <NavBar />
-        <Cursor delay={50} />
+        <Cursor delay={250} />
 
 
 
