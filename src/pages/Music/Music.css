@@ -13,7 +13,6 @@
     border-radius: 1%;
     overflow: hidden;
     margin: 3.5%;
-
 }
 
 .transparent-card-body:hover {
@@ -23,7 +22,7 @@
 .title {
     font-size: 4em;
     text-shadow: 3px 3px #558ABB;
-
+    padding-top: 13%;
 }
 
 .sub-title {
@@ -32,4 +31,36 @@
 
 .youtube {
     margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .transparent-card-body {
+        margin: 2%;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .youtube {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .transparent-card-body {
+        margin: 1%;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .sub-title {
+        padding-bottom: 10px;
+    }
+
+    .youtube {
+        margin-bottom: 20px;
+    }
 }

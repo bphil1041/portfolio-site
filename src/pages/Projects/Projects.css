@@ -19,7 +19,6 @@
     transform: scale(1.1);
 }
 
-
 .modalTitle {
     font-family: 'roboto';
     color: navajowhite;
@@ -31,7 +30,6 @@
     color: navajowhite;
     background-color: black;
     font-size: 10rem;
-
 }
 
 .card-text {
@@ -62,7 +60,6 @@
 
 .project-card:hover {
     transform: scale(1.05);
-
 }
 
 .modal-footer {
@@ -78,6 +75,33 @@
 h1 {
     font-size: 4em;
     text-shadow: 3px 3px #558ABB;
-    padding-top: 10%;
+    padding-top: 12.55%;
+}
 
+@media (max-width: 768px) {
+    .modalBody {
+        font-size: 5rem;
+    }
+
+    .project-card {
+        margin: 2%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 576px) {
+    .modalBody {
+        font-size: 3rem;
+    }
+
+    .project-card {
+        margin: 1%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
 }
