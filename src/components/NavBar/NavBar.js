@@ -2,24 +2,21 @@ import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+
 import './NavBar.css';
 
 function NavBar() {
     const [activeLink, setActiveLink] = useState(null);
-    const [expanded, setExpanded] = useState(false);
 
     const handleNavLinkClick = (index) => {
         setActiveLink(index);
     };
 
-    const handleToggle = () => {
-        setExpanded(!expanded);
-    };
 
     return (
-        <Navbar className={`navbar ${expanded ? 'expanded' : ''}`} bg="black" variant="dark" expand="lg">
+        <Navbar className='navbar' bg="black" variant="dark" expand="lg">
             <Navbar.Brand as={Link} to="/home" onClick={() => handleNavLinkClick(0)} className={activeLink === 0 ? 'active' : ''}>BP</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="navbar-right">
                     <Nav.Link as={Link} to="/home" onClick={() => handleNavLinkClick(1)} className={activeLink === 1 ? 'active' : ''}>Home</Nav.Link>

@@ -7,7 +7,7 @@
 .modalButton {
     background-color: black;
     color: navajowhite;
-    font-family: 'Calistoga';
+    font-family: 'roboto';
     width: 100%;
     border-color: navajowhite;
 }
@@ -21,13 +21,13 @@
 
 
 .modalTitle {
-    font-family: 'Calistoga';
+    font-family: 'roboto';
     color: navajowhite;
     background-color: black;
 }
 
 .modalBody {
-    font-family: 'Calistoga';
+    font-family: 'roboto';
     color: navajowhite;
     background-color: black;
     font-size: 10rem;
@@ -57,7 +57,7 @@
     background-color: black;
     transition: transform 0.2s;
     cursor: pointer;
-    margin: 3.5%
+    margin: 3.5%;
 }
 
 .project-card:hover {

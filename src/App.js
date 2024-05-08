@@ -78,11 +78,12 @@ const SparkleContainer = styled.div`
   width: 100vw;
   height: 200%;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 `;
 
 const Sparkle = styled.div`
   position: absolute;
+  border-radius: 50%;
   width: 2px;
   height: 2px;
   background-color: navajowhite;
@@ -122,7 +123,7 @@ function App() {
 
 
         <div className="content-container">
-          <Routes>
+          <Routes className="route">
             <Route path="/" element={<HomeWithFade />} />
             <Route path="/home" element={<HomeWithFade />} />
             <Route path="/music" element={<MusicWithFade />} />

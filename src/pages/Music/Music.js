@@ -38,24 +38,18 @@ function Music() {
         },
     ];
 
-    const youtubeIframeSrc = "https://www.youtube.com/embed/0GdHxwoirNE?si=ombYmlE5zNikUsKb";
-    const youtubeIframeStyle = "border: 0; width: 560px; height: 315px;";
+    const youtubeIframeSrc1 = "https://www.youtube.com/embed/0GdHxwoirNE?si=ombYmlE5zNikUsKb";
+    const youtubeIframeStyle1 = "border: 0; width: 560px; height: 315px;";
 
-    const sanitizedYoutubeIframeHtml = `
-        <iframe
-            style="${DOMPurify.sanitize(youtubeIframeStyle)}"
-            src="${DOMPurify.sanitize(youtubeIframeSrc)}"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-        ></iframe>
-    `;
+    const youtubeIframeSrc2 = "https://www.youtube.com/embed/c8Obw0OTEUY";
+    const youtubeIframeStyle2 = "border: 0; width: 560px; height: 315px;";
+
+    const sanitizedYoutubeIframeHtml1 = createSanitizedIframeHtml(youtubeIframeSrc1, youtubeIframeStyle1, '');
+    const sanitizedYoutubeIframeHtml2 = createSanitizedIframeHtml(youtubeIframeSrc2, youtubeIframeStyle2, '');
 
     return (
         <>
-            <Row>
+            <Row className='row'>
                 <Col>
                     <h1 className='title'>Music</h1>
                     <p className='sub-title'>Here you can find music that I've collaborated on, both as a performer and composer.</p>
@@ -71,11 +65,17 @@ function Music() {
                         />
                     </Card>
                 ))}
-                <Card className="transparent-card"></Card>
                 <Card className="transparent-card">
                     <Card.Body className="transparent-card-body youtube"
                         dangerouslySetInnerHTML={{
-                            __html: sanitizedYoutubeIframeHtml,
+                            __html: sanitizedYoutubeIframeHtml1,
+                        }}
+                    />
+                </Card>
+                <Card className="transparent-card">
+                    <Card.Body className="transparent-card-body youtube"
+                        dangerouslySetInnerHTML={{
+                            __html: sanitizedYoutubeIframeHtml2,
                         }}
                     />
                 </Card>
