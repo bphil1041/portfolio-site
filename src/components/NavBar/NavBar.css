@@ -9,6 +9,9 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+    border-bottom: ridge;
+    border-width: 2px;
+    border-color: navajowhite;
 }
 
 .navbar-brand {

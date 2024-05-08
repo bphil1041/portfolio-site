@@ -75,7 +75,7 @@
 h1 {
     font-size: 4em;
     text-shadow: 3px 3px #558ABB;
-    padding-top: 12.55%;
+    padding-top: 15vh;
 }
 
 @media (max-width: 768px) {
