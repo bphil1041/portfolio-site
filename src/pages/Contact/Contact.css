@@ -8,7 +8,8 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
-    /* Add padding to the sides */
+    text-align: center;
+    /* Center align text */
 }
 
 .contact-container h1 {
@@ -30,13 +31,9 @@ body {
     text-decoration: underline;
 }
 
-.contact-container {
-    text-align: center;
-}
-
-.contact-container p {
-    display: inline-block;
-    margin: 0 10px;
+/* Add space between paragraphs */
+.contact-container p+p {
+    margin-top: 20px;
 }
 
 /* Media queries for responsive design */
