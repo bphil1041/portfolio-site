@@ -1,3 +1,11 @@
+.music-container {
+    padding: 20px;
+}
+
+.text-content {
+    margin-bottom: 20px;
+}
+
 .transparent-card {
     background-color: transparent;
     border: none;
@@ -23,10 +31,12 @@
     font-size: 4em;
     text-shadow: 3px 3px #558ABB;
     padding-top: 15vh;
+    text-align: center;
 }
 
 .sub-title {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .youtube {
