@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useRef, useState, useEffect } from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home/Home';
@@ -22,6 +21,19 @@ const CursorWrapper = styled.div`
     z-index: 1;
 `;
 
+const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 400vh; /* Total height of all pages */
+`;
+
+const Page = styled.div`
+  height: 400vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+`;
 
 const Cursor = ({ delay }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -101,50 +113,43 @@ const Sparkle = styled.div`
 `;
 
 function App() {
+  const homeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const musicRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (sectionRef) => {
+    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <Router basename="/portfolio-site">
-      <div className="App">
-        <SparkleContainer>
-          {[...Array(150)].map((_, index) => (
-            <Sparkle
-              key={index}
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 2}s`,
-              }}
-            />
-          ))}
-        </SparkleContainer>
+    <div className="App">
+      <SparkleContainer>
+        {[...Array(150)].map((_, index) => (
+          <Sparkle
+            key={index}
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 2}s`,
+            }}
+          />
+        ))}
+      </SparkleContainer>
 
-        <NavBar />
-        <Cursor delay={250} />
+      <NavBar scrollToSection={scrollToSection} refs={{ homeRef, projectsRef, musicRef, contactRef }} />
+      <Cursor delay={250} />
 
-
-
-        <div className="content-container">
-          <Routes className="route">
-            <Route path="/" element={<HomeWithFade />} />
-            <Route path="/home" element={<HomeWithFade />} />
-            <Route path="/music" element={<MusicWithFade />} />
-            <Route path="/projects" element={<ProjectsWithFade />} />
-            <Route path="/contact" element={<ContactWithFade />} />
-          </Routes>
-        </div>
+      <div className="content-container">
+        <ContentContainer>
+          <Page ref={homeRef}><Home /></Page>
+          <Page ref={projectsRef}><Projects /></Page>
+          <Page ref={musicRef}><Music /></Page>
+          <Page ref={contactRef}><Contact /></Page>
+        </ContentContainer>
       </div>
-    </Router>
+    </div>
   );
 }
-
-const withFade = (Component) => () => (
-  <FadeIn>
-    <Component />
-  </FadeIn>
-);
-
-const HomeWithFade = withFade(Home);
-const MusicWithFade = withFade(Music);
-const ProjectsWithFade = withFade(Projects);
-const ContactWithFade = withFade(Contact);
 
 export default App;
