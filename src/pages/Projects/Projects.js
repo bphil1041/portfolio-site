@@ -18,7 +18,6 @@ function Projects() {
         { id: 3, name: 'myFlix (back end)', image: project3Image, description: 'Description of Project 3' },
         { id: 4, name: 'Meet App', image: project4Image, description: 'A serverless, progressive React Web App (PWA) using TDD technique. View the app <a href="https://bphil1041.github.io/meet-app/" target="_blank" rel="noreferrer"> here</a>' },
         { id: 5, name: 'Pokedex', image: project5Image, description: 'A simple Pokédex application that displays basic Pokémon information. Javascript, html, and CSS. View the app <a href="https://github.com/bphil1041/Pokedex" target="_blank" rel="noreferrer"> here</a>' },
-
         // Add more projects as needed
     ];
 
@@ -28,7 +27,7 @@ function Projects() {
     };
 
     return (
-        <>
+        <div className="projects-container">
             <h1>Projects</h1>
             <Row xs={1} md={2} lg={3} className="g-4">
                 {projects.map((project) => (
@@ -49,16 +48,13 @@ function Projects() {
                 <Modal.Body className='modalBody'>
                     <img src={selectedProject?.image} alt={selectedProject?.name} className="modal-image" />
                     <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(selectedProject?.description) }}></p>
-                    {/* Add more details about the project */}
                 </Modal.Body>
                 <Modal.Footer>
                     <Button className='modalButton' variant="secondary" onClick={() => setShowModal(false)}>Close</Button>
-                    {/* Add additional buttons or actions */}
                 </Modal.Footer>
             </Modal>
-        </>
+        </div>
     );
-
 }
 
 export default Projects;
