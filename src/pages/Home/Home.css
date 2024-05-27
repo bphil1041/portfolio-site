@@ -1,8 +1,8 @@
 .home-title {
-    font-size: 6rem;
+    font-size: 10rem;
     font-weight: bold;
     text-shadow: 3px 3px #558ABB;
-    padding-top: 15vh;
+    padding-top: 20vh;
 }
 
 .home-subtitle {
@@ -28,5 +28,6 @@ p {
 }
 
 .about-me {
-    padding: 0 10vw 5vh 10vw;
+    padding: 0 20vw 3vh 20vw;
+    font-size: 1.25rem;
 }
