@@ -7,24 +7,20 @@ function Contact() {
     return (
         <div className="contact-container">
             <h1>Contact</h1>
-            <br></br>
-            <h2>Email</h2>
-            <p><a href="mailto:benjamin.r.phillips1041@gmail.com">benjamin.r.phillips1041@gmail.com</a></p>
-            <br></br>
-            <br></br>
+            <br />
+            <h2>Email:</h2>
+            <p><a className='email' href="mailto:benjamin.r.phillips1041@gmail.com">benjamin.r.phillips1041@gmail.com</a></p>
+            <br />
+            <br />
             <h2>Socials:</h2>
-
-            <p>
+            <div className="socials-container">
                 <a href="https://www.linkedin.com/in/ben-phillips-b6532027a/" target="_blank" rel="noreferrer">
-                    <LinkedinLogo />
+                    <LinkedinLogo className="social-logo" />
                 </a>
-            </p>
-            <p>
                 <a href="https://github.com/bphil1041" target="_blank" rel="noreferrer">
-                    <GitHubLogo />
+                    <GitHubLogo className="social-logo" />
                 </a>
-            </p>
-
+            </div>
         </div>
     );
 }

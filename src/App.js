@@ -57,19 +57,7 @@ const Cursor = ({ delay }) => {
   );
 };
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
 
-const FadeIn = styled.div`
-  opacity: 0;
-  animation: ${fadeIn} 2.5s forwards;
-`;
 
 const sparklePulse = keyframes`
   0% {

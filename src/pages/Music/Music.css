@@ -1,5 +1,7 @@
 .music-container {
     padding: 20px;
+    text-align: center;
+    /* Aligning all content to the right */
 }
 
 .text-content {
@@ -20,23 +22,27 @@
     cursor: pointer;
     border-radius: 1%;
     overflow: hidden;
-    margin: 3.5%;
+    margin: 10%;
 }
+
 
 .transparent-card-body:hover {
     transform: scale(1.05);
 }
 
 .title {
-    font-size: 4em;
+    font-size: 7rem;
     text-shadow: 3px 3px #558ABB;
-    padding-top: 15vh;
+    padding-top: 10vh;
     text-align: center;
+    /* Aligning the title to the right */
 }
 
 .sub-title {
     padding-bottom: 20px;
     text-align: center;
+    padding: 0 25vw 0 25vw;
+    /* Aligning the sub-title to the right */
 }
 
 .youtube {

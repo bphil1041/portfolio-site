@@ -1,18 +1,20 @@
 .projects-container {
     width: 100%;
     padding: 20px;
+    text-align: left;
+    /* Aligning all content to the left */
 }
 
-h1 {
+.projects-container h1 {
     width: 100%;
-    font-size: 4em;
+    font-size: 7rem;
     text-shadow: 3px 3px #558ABB;
-    padding-top: 20vh;
+    padding-top: 10vh;
     text-align: center;
+    /* Aligning the title to the left */
     margin-bottom: 20px;
+    margin-left: 1%;
 }
-
-/* Rest of your CSS remains the same */
 
 .modal-image {
     max-width: 100%;
@@ -46,11 +48,15 @@ h1 {
     color: navajowhite;
     background-color: black;
     font-size: 10rem;
+    text-align: left;
+    /* Aligning the modal body content to the left */
 }
 
 .card-text {
     color: navajowhite;
     font-size: 1.5rem;
+    text-align: left;
+    /* Aligning card text to the left */
 }
 
 .card-body {
@@ -59,6 +65,8 @@ h1 {
 
 .card-title {
     color: navajowhite;
+    text-align: left;
+    /* Aligning card title to the left */
 }
 
 .project-card {
@@ -97,7 +105,7 @@ h1 {
         margin: 2%;
     }
 
-    h1 {
+    .projects-container h1 {
         font-size: 3em;
     }
 }
@@ -111,7 +119,7 @@ h1 {
         margin: 1%;
     }
 
-    h1 {
+    .projects-container h1 {
         font-size: 2em;
     }
 }
