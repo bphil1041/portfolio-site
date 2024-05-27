@@ -48,8 +48,8 @@ function Music() {
     const sanitizedYoutubeIframeHtml2 = createSanitizedIframeHtml(youtubeIframeSrc2, youtubeIframeStyle2, '');
 
     return (
-        <>
-            <Row className='row'>
+        <div className="music-container">
+            <Row className='text-content'>
                 <Col>
                     <h1 className='title'>Music</h1>
                     <p className='sub-title'>Here you can find music that I've collaborated on, both as a performer and composer.</p>
@@ -57,30 +57,36 @@ function Music() {
             </Row>
             <Row xs={1} md={2} lg={3} className="g-4">
                 {bandcampAlbums.map((album, index) => (
-                    <Card key={index} className="transparent-card">
-                        <Card.Body className="transparent-card-body"
+                    <Col key={index}>
+                        <Card className="transparent-card">
+                            <Card.Body className="transparent-card-body"
+                                dangerouslySetInnerHTML={{
+                                    __html: createSanitizedIframeHtml(album.src, album.style, album.link),
+                                }}
+                            />
+                        </Card>
+                    </Col>
+                ))}
+                <Col>
+                    <Card className="transparent-card">
+                        <Card.Body className="transparent-card-body youtube"
                             dangerouslySetInnerHTML={{
-                                __html: createSanitizedIframeHtml(album.src, album.style, album.link),
+                                __html: sanitizedYoutubeIframeHtml1,
                             }}
                         />
                     </Card>
-                ))}
-                <Card className="transparent-card">
-                    <Card.Body className="transparent-card-body youtube"
-                        dangerouslySetInnerHTML={{
-                            __html: sanitizedYoutubeIframeHtml1,
-                        }}
-                    />
-                </Card>
-                <Card className="transparent-card">
-                    <Card.Body className="transparent-card-body youtube"
-                        dangerouslySetInnerHTML={{
-                            __html: sanitizedYoutubeIframeHtml2,
-                        }}
-                    />
-                </Card>
+                </Col>
+                <Col>
+                    <Card className="transparent-card">
+                        <Card.Body className="transparent-card-body youtube"
+                            dangerouslySetInnerHTML={{
+                                __html: sanitizedYoutubeIframeHtml2,
+                            }}
+                        />
+                    </Card>
+                </Col>
             </Row>
-        </>
+        </div>
     );
 }
 
