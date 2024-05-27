@@ -8,7 +8,7 @@ function Contact() {
         <div className="contact-container">
             <h1>Contact</h1>
             <br></br>
-            <h2>Send business inquiries to:</h2>
+            <h2>Email</h2>
             <p><a href="mailto:benjamin.r.phillips1041@gmail.com">benjamin.r.phillips1041@gmail.com</a></p>
             <br></br>
             <br></br>
