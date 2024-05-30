@@ -2,6 +2,7 @@
     width: 100%;
     padding: 20px;
     text-align: left;
+    /* Aligning all content to the left */
 }
 
 .projects-container h1 {
@@ -10,8 +11,62 @@
     text-shadow: 3px 3px #558ABB;
     padding-top: 10vh;
     text-align: center;
+    /* Aligning the title to the left */
     margin-bottom: 20px;
     margin-left: 1%;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 80vh;
+    margin: 0 auto;
+}
+
+.modalButton {
+    background-color: black;
+    color: navajowhite;
+    font-family: 'roboto';
+    width: 100%;
+    border-color: navajowhite;
+}
+
+.modalButton:hover {
+    background-color: maroon;
+    color: navajowhite;
+    border-color: navajowhite;
+    transform: scale(1.1);
+}
+
+.modalTitle {
+    font-family: 'roboto';
+    color: navajowhite;
+    background-color: black;
+}
+
+.modalBody {
+    font-family: 'roboto';
+    color: navajowhite;
+    background-color: black;
+    font-size: 10rem;
+    text-align: left;
+    /* Aligning the modal body content to the left */
+}
+
+.card-text {
+    color: navajowhite;
+    font-size: 1.5rem;
+    text-align: left;
+    /* Aligning card text to the left */
+}
+
+.card-body {
+    background-color: black;
+}
+
+.card-title {
+    color: navajowhite;
+    text-align: left;
+    /* Aligning card title to the left */
 }
 
 .project-card {
@@ -23,10 +78,15 @@
     background-color: black;
     transition: transform 0.2s;
     cursor: pointer;
-    height: 100%;
+    margin: 3.5%;
+    position: relative;
+    /* Added for positioning */
     display: flex;
+    /* Added for flexbox */
     flex-direction: column;
+    /* Added for flexbox */
     justify-content: space-between;
+    /* Added for flexbox */
 }
 
 .project-card:hover {
@@ -34,43 +94,48 @@
 }
 
 .project-card-image {
-    height: 300px;
+    height: 100%;
+    /* Changed height to 100% */
+    width: 100%;
+    /* Added width: 100% */
     object-fit: cover;
+    /* Added object-fit property */
 }
 
-.card-body {
+.modal-footer {
     background-color: black;
+    border-color: navajowhite;
 }
 
-.card-title {
-    color: navajowhite;
-    text-align: left;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.card-text {
-    color: navajowhite;
-    font-size: 1.5rem;
-    text-align: left;
+.modal-header {
+    background: black;
+    border-color: navajowhite;
 }
 
 @media (max-width: 768px) {
-    .projects-container h1 {
-        font-size: 3em;
+    .modalBody {
+        font-size: 5rem;
     }
 
     .project-card {
         margin: 2%;
     }
+
+    .projects-container h1 {
+        font-size: 3em;
+    }
 }
 
 @media (max-width: 576px) {
-    .projects-container h1 {
-        font-size: 2em;
+    .modalBody {
+        font-size: 3rem;
     }
 
     .project-card {
         margin: 1%;
+    }
+
+    .projects-container h1 {
+        font-size: 2em;
     }
 }
