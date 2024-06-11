@@ -39,13 +39,23 @@ function Music() {
     ];
 
     const youtubeIframeSrc1 = "https://www.youtube.com/embed/0GdHxwoirNE?si=ombYmlE5zNikUsKb";
-    const youtubeIframeStyle1 = "border: 0; width: 560px; height: 315px;";
-
     const youtubeIframeSrc2 = "https://www.youtube.com/embed/c8Obw0OTEUY";
-    const youtubeIframeStyle2 = "border: 0; width: 560px; height: 315px;";
 
-    const sanitizedYoutubeIframeHtml1 = createSanitizedIframeHtml(youtubeIframeSrc1, youtubeIframeStyle1, '');
-    const sanitizedYoutubeIframeHtml2 = createSanitizedIframeHtml(youtubeIframeSrc2, youtubeIframeStyle2, '');
+    const createYoutubeIframeHtml = (src) => {
+        const sanitizedSrc = DOMPurify.sanitize(src);
+        return `
+            <iframe
+                class="youtube-iframe"
+                src="${sanitizedSrc}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        `;
+    };
+
+    const sanitizedYoutubeIframeHtml1 = createYoutubeIframeHtml(youtubeIframeSrc1);
+    const sanitizedYoutubeIframeHtml2 = createYoutubeIframeHtml(youtubeIframeSrc2);
 
     return (
         <div className="music-container">
