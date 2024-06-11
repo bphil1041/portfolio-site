@@ -112,6 +112,10 @@
     border-color: navajowhite;
 }
 
+.info-p {
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .modalBody {
         font-size: 5rem;
