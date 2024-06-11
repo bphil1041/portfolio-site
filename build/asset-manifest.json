@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.ef0f2e8f.css",
-    "main.js": "/portfolio-site/static/js/main.b7d25789.js",
+    "main.css": "/portfolio-site/static/css/main.550fae42.css",
+    "main.js": "/portfolio-site/static/js/main.a343ddb1.js",
     "static/js/453.534db5b8.chunk.js": "/portfolio-site/static/js/453.534db5b8.chunk.js",
     "static/media/IMG_0346 2.png": "/portfolio-site/static/media/IMG_0346 2.d13e20e1316f6fae1a75.png",
     "static/media/movie_api_doc.png": "/portfolio-site/static/media/movie_api_doc.1f18d5fdb95451bb43db.png",
     "static/media/myFlixScreenshot.png": "/portfolio-site/static/media/myFlixScreenshot.66731e1c3b7f09d2a709.png",
     "static/media/Meet App.png": "/portfolio-site/static/media/Meet App.cfd04113d6526c2c3fd1.png",
     "static/media/Screenshot 2024-03-05 at 11.46.28 PM 2.png": "/portfolio-site/static/media/Screenshot 2024-03-05 at 11.46.28 PM 2.cb10f3fb84a90f1d8890.png",
+    "static/media/chat-app.png": "/portfolio-site/static/media/chat-app.30811ac1588be227b343.png",
     "static/media/Gengar.png": "/portfolio-site/static/media/Gengar.731262dbe3736bab0ea0.png",
     "index.html": "/portfolio-site/index.html",
     "static/media/LI-Bug.svg.original.svg": "/portfolio-site/static/media/LI-Bug.svg.original.115d3af0320cfa2e8e34ba26d011a603.svg",
     "static/media/github-mark-white.svg": "/portfolio-site/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
-    "main.ef0f2e8f.css.map": "/portfolio-site/static/css/main.ef0f2e8f.css.map",
-    "main.b7d25789.js.map": "/portfolio-site/static/js/main.b7d25789.js.map",
+    "main.550fae42.css.map": "/portfolio-site/static/css/main.550fae42.css.map",
+    "main.a343ddb1.js.map": "/portfolio-site/static/js/main.a343ddb1.js.map",
     "453.534db5b8.chunk.js.map": "/portfolio-site/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef0f2e8f.css",
-    "static/js/main.b7d25789.js"
+    "static/css/main.550fae42.css",
+    "static/js/main.a343ddb1.js"
   ]
 }
