@@ -7,6 +7,7 @@ import project2Image from '../../assets/myFlixScreenshot.png';
 import project3Image from '../../assets/movie_api_doc.png';
 import project4Image from '../../assets/Meet App.png';
 import project5Image from '../../assets/Gengar.png';
+import project6Image from '../../assets/chat-app.png';
 
 function Projects() {
     const [showModal, setShowModal] = React.useState(false);
@@ -18,6 +19,8 @@ function Projects() {
         { id: 3, name: 'myFlix (back end)', image: project3Image, description: 'This is the server-side for the myFlix app which provides users with information about movies, directors, and genres. Users can register, update their profiles, and create a list of favorite movies. <br> <br> Technologies used: Node.js, Express, REST API, MongoDB, JWT Authentication, Data Validation, and Heroku. <br> <br> View the code <a href="https://github.com/bphil1041/Movie-Api" target="_blank" rel="noreferrer"> on my GitHub </a>' },
         { id: 4, name: 'Meet App', image: project4Image, description: 'A serverless, progressive React Web App (PWA) using TDD technique. This app fetches and displays events fetched from a Google Calendar. <br> <br> Technologies used: React, Google Calendar API, AWS Lambda, Jest (Unit and Integration Testing), Jest Cucumber (User Acceptance Testing), Puppeteer, Atatus (Performance Monitoring). <br> <br> View the code <a href="https://github.com/bphil1041/meet-app" target="_blank" rel="noreferrer"> on my GitHub.</a>' },
         { id: 5, name: 'Pokedex', image: project5Image, description: 'A simple Pokédex application that displays basic Pokémon information that is fetched from an API.<br> <br> Technologies used: <br> Javascript, HTML, and CSS. <br> <br> View the code <a href="https://github.com/bphil1041/Pokedex" target="_blank" rel="noreferrer"> on my GitHub.</a>' },
+        { id: 6, name: 'Chat App', image: project6Image, description: 'A React Native Chat app that is designed to facilitate communcation between users. Users can share text messages, images, and their current location. <br> <br> View the code <a href="https://github.com/bphil1041/chat-demo" target="_blank" rel="noreferrer">on my GitHub</a>' },
+
         // Add more projects as needed
     ];
 
