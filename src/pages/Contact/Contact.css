@@ -53,6 +53,8 @@ body {
 
 .email {
     font-size: 1.6rem;
+    padding-left: 25vw;
+    padding-right: 25vw;
 }
 
 /* Media queries for responsive design */
