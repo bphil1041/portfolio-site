@@ -1,7 +1,6 @@
 .music-container {
     padding: 20px;
     text-align: center;
-    /* Aligning all content to the right */
 }
 
 .text-content {
@@ -25,7 +24,6 @@
     margin: 10%;
 }
 
-
 .transparent-card-body:hover {
     transform: scale(1.05);
 }
@@ -35,7 +33,6 @@
     text-shadow: 3px 3px #558ABB;
     padding-top: 10vh;
     text-align: center;
-    /* Aligning the title to the right */
 }
 
 .sub-title {
@@ -43,11 +40,16 @@
     text-align: center;
     padding: 0 25vw 0 25vw;
     font-size: 1.6rem;
-    /* Aligning the sub-title to the right */
 }
 
 .youtube {
     margin-bottom: 50px;
+}
+
+.youtube-iframe {
+    width: 100%;
+    height: 450px;
+    /* Adjust the height as needed */
 }
 
 @media (max-width: 768px) {
@@ -61,6 +63,11 @@
 
     .youtube {
         margin-bottom: 30px;
+    }
+
+    .youtube-iframe {
+        height: 300px;
+        /* Adjust the height for smaller screens */
     }
 }
 
@@ -79,5 +86,10 @@
 
     .youtube {
         margin-bottom: 20px;
+    }
+
+    .youtube-iframe {
+        height: 200px;
+        /* Adjust the height for even smaller screens */
     }
 }
