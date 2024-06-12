@@ -8,8 +8,7 @@ function Home() {
             <h1 className='home-title'>Ben Phillips</h1>
             <p className='home-subtitle'>Full-Stack Web Developer / Musician</p>
             <img className='BenPhoto' src={BenPhoto}></img>
-            <p className='about-me'>Hello! My name is Ben, and I'm a Full-Stack Web Developer with a diverse background in music performance and composition, customer service, and sales in the bike industry. These experiences have honed my communication, problem-solving, and creative thinking skills, enabling a holistic approach to software development. Specializing in front-end technologies like React and React Native, I focus on crafting engaging user experiences, responsive designs, and ensuring accessibility standards. I am passionate about merging my love for music with my expertise in technology and seek opportunities to contribute to innovative projects and collaborate with like-minded professionals. Let's connect to explore potential collaborations or discuss how my skills can benefit your team.</p>
-
+            <p className='hey'>Hello and welcome to my humble abode! I love to use my creative and problem solving skills to help people, whether that be with the keyboard or the trumpet. Please feel free to have a look around.</p>
         </div>
     );
 }
