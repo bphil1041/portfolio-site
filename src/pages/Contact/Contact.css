@@ -9,7 +9,6 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    /* Align text to the center */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,13 +21,14 @@ body {
     font-size: 7rem;
     text-shadow: 3px 3px #558ABB;
     margin-top: 10vh;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .contact-container p {
     font-size: 1.2em;
     margin-bottom: 10px;
     word-wrap: break-word;
-    /* Allow long words to break onto the next line */
 }
 
 .contact-container a {
@@ -58,22 +58,52 @@ body {
 }
 
 /* Media queries for responsive design */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .contact-container h1 {
-        font-size: 3em;
+        font-size: 4rem;
     }
 
     .contact-container p {
         font-size: 1em;
     }
+
+    .email {
+        font-size: 1.2rem;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
 }
 
-@media (max-width: 576px) {
+/* Media query for medium screens */
+@media (min-width: 601px) and (max-width: 1200px) {
     .contact-container h1 {
-        font-size: 2.5em;
+        font-size: 5rem;
     }
 
     .contact-container p {
-        font-size: 0.8em;
+        font-size: 1.1em;
+    }
+
+    .email {
+        font-size: 1.4rem;
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 1201px) {
+    .contact-container h1 {
+        font-size: 7rem;
+    }
+
+    .contact-container p {
+        font-size: 1.2em;
+    }
+
+    .email {
+        font-size: 1.6rem;
+        padding-left: 25vw;
+        padding-right: 25vw;
     }
 }
