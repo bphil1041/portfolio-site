@@ -4,14 +4,11 @@
     text-shadow: 3px 3px #558ABB;
     padding-top: 15vh;
     text-align: center;
-
 }
 
 .home-subtitle {
     font-size: 2rem;
-    text-shadow: 2px px #558ABB;
-
-
+    text-align: center;
 }
 
 .BenPhoto {
@@ -20,16 +17,53 @@
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    height: 300px;
-    width: auto;
-
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+    /* Base max-width */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-
-.about-me {
+.hey {
     padding: 0 20vw 3vh 20vw;
     font-size: 1.25rem;
-    text-align: left;
-    text-indent: 35px;
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .home-title {
+        font-size: 4rem;
+    }
+
+    .home-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .about-me {
+        padding: 0 5vw 3vh 5vw;
+    }
+
+    .BenPhoto {
+        max-width: 300px;
+        /* Adjust max-width for small screens */
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 601px) and (max-width: 1200px) {
+    .BenPhoto {
+        max-width: 400px;
+        /* Adjust max-width for medium screens */
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 1201px) {
+    .BenPhoto {
+        max-width: 500px;
+        /* Adjust max-width for large screens */
+    }
 }
