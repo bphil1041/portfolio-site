@@ -2,7 +2,6 @@
     width: 100%;
     padding: 20px;
     text-align: left;
-    /* Aligning all content to the left */
 }
 
 .projects-container h1 {
@@ -11,9 +10,7 @@
     text-shadow: 3px 3px #558ABB;
     padding-top: 10vh;
     text-align: center;
-    /* Aligning the title to the left */
     margin-bottom: 20px;
-    margin-left: 1%;
 }
 
 .modal-image {
@@ -49,14 +46,12 @@
     background-color: black;
     text-align: left;
     font-size: 1.6rem;
-    /* Aligning the modal body content to the left */
 }
 
 .card-text {
     color: navajowhite;
     font-size: 1.5rem;
     text-align: left;
-    /* Aligning card text to the left */
 }
 
 .card-body {
@@ -66,7 +61,6 @@
 .card-title {
     color: navajowhite;
     text-align: left;
-    /* Aligning card title to the left */
 }
 
 .project-card {
@@ -80,13 +74,9 @@
     cursor: pointer;
     margin: 3.5%;
     position: relative;
-    /* Added for positioning */
     display: flex;
-    /* Added for flexbox */
     flex-direction: column;
-    /* Added for flexbox */
     justify-content: space-between;
-    /* Added for flexbox */
 }
 
 .project-card:hover {
@@ -95,11 +85,8 @@
 
 .project-card-image {
     height: 100%;
-    /* Changed height to 100% */
     width: 100%;
-    /* Added width: 100% */
     object-fit: cover;
-    /* Added object-fit property */
 }
 
 .modal-footer {
@@ -117,30 +104,47 @@
     font-size: 1.6rem;
 }
 
-@media (max-width: 768px) {
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .projects-container h1 {
+        font-size: 4rem;
+    }
+
     .modalBody {
-        font-size: 5rem;
+        font-size: 1rem;
     }
 
     .project-card {
         margin: 2%;
     }
-
-    .projects-container h1 {
-        font-size: 3em;
-    }
 }
 
-@media (max-width: 576px) {
+/* Media query for medium screens */
+@media (min-width: 601px) and (max-width: 1200px) {
+    .projects-container h1 {
+        font-size: 5rem;
+    }
+
     .modalBody {
-        font-size: 3rem;
+        font-size: 1.3rem;
     }
 
     .project-card {
-        margin: 1%;
+        margin: 2.5%;
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 1201px) {
+    .projects-container h1 {
+        font-size: 7rem;
     }
 
-    .projects-container h1 {
-        font-size: 2em;
+    .modalBody {
+        font-size: 1.6rem;
+    }
+
+    .project-card {
+        margin: 3.5%;
     }
 }
