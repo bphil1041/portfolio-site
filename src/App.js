@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import Music from './pages/Music/Music';
+import About from './pages/About/About';
 import styled, { keyframes } from 'styled-components';
 
 const CursorWrapper = styled.div`
@@ -24,11 +25,11 @@ const CursorWrapper = styled.div`
 const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 400vh; /* Total height of all pages */
+  height: auto;
 `;
 
 const Page = styled.div`
-  height: 400vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,8 +57,6 @@ const Cursor = ({ delay }) => {
     <CursorWrapper style={{ top: position.y, left: position.x }} />
   );
 };
-
-
 
 const sparklePulse = keyframes`
   0% {
@@ -105,6 +104,7 @@ function App() {
   const projectsRef = useRef(null);
   const musicRef = useRef(null);
   const contactRef = useRef(null);
+  const aboutRef = useRef(null);
 
   const scrollToSection = (sectionRef) => {
     sectionRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -125,12 +125,13 @@ function App() {
         ))}
       </SparkleContainer>
 
-      <NavBar scrollToSection={scrollToSection} refs={{ homeRef, projectsRef, musicRef, contactRef }} />
+      <NavBar scrollToSection={scrollToSection} refs={{ homeRef, aboutRef, projectsRef, musicRef, contactRef }} />
       <Cursor delay={250} />
 
       <div className="content-container">
         <ContentContainer>
           <Page ref={homeRef}><Home /></Page>
+          <Page ref={aboutRef}><About /></Page>
           <Page ref={projectsRef}><Projects /></Page>
           <Page ref={musicRef}><Music /></Page>
           <Page ref={contactRef}><Contact /></Page>
