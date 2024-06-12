@@ -43,7 +43,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   scroll-snap-type: y mandatory;
   /* Enable vertical snapping */
 }
@@ -53,6 +53,14 @@ body {
   height: 100vh;
   scroll-snap-align: start;
   /* Snap each page to the start of the viewport */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .page {
+    height: auto;
+    min-height: 100vh;
+  }
 }
 
 /* Additional styling for the navbar */
