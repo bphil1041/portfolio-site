@@ -1,6 +1,11 @@
 import React from 'react';
-import { ReactComponent as LinkedinLogo } from '../../assets/LI-Bug.svg.original.svg';
-import { ReactComponent as GitHubLogo } from '../../assets/github-mark-white.svg';
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6";
+import { CiTwitter } from "react-icons/ci";
+
+
+
 import './Contact.css';
 
 function Contact() {
@@ -8,17 +13,23 @@ function Contact() {
         <div className="contact-container">
             <h1>Contact</h1>
             <br />
-            <h2>Email:</h2>
+            <h2>email</h2>
             <p><a className='email' href="mailto:benjamin.r.phillips1041@gmail.com">benjamin.r.phillips1041@gmail.com</a></p>
             <br />
             <br />
-            <h2>Socials:</h2>
+            <h2>socials</h2>
             <div className="socials-container">
                 <a href="https://www.linkedin.com/in/ben-phillips-b6532027a/" target="_blank" rel="noreferrer">
-                    <LinkedinLogo className="social-logo" />
+                    <CiLinkedin className="social-logo" />
                 </a>
                 <a href="https://github.com/bphil1041" target="_blank" rel="noreferrer">
-                    <GitHubLogo className="social-logo" />
+                    <FaGithub className="social-logo" />
+                </a>
+                <a href="https://medium.com/@bphil1041" target="_blank" rel="noreferrer">
+                    <FaMedium />
+                </a>
+                <a href="https://x.com/BenPhillip49714" target="_blank" rel="noreferrer">
+                    <CiTwitter />
                 </a>
             </div>
         </div>
