@@ -9,6 +9,7 @@ import project4Image from '../../assets/Meet App.png';
 import project5Image from '../../assets/Gengar.png';
 import project6Image from '../../assets/chat-app.png';
 
+
 function Projects() {
     const [showModal, setShowModal] = React.useState(false);
     const [selectedProject, setSelectedProject] = React.useState(null);
