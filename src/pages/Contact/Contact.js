@@ -1,8 +1,7 @@
 import React from 'react';
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
-import { FaMedium } from "react-icons/fa6";
-import { CiTwitter } from "react-icons/ci";
+
 
 
 
@@ -24,12 +23,6 @@ function Contact() {
                 </a>
                 <a href="https://github.com/bphil1041" target="_blank" rel="noreferrer">
                     <FaGithub className="social-logo" />
-                </a>
-                <a href="https://medium.com/@bphil1041" target="_blank" rel="noreferrer">
-                    <FaMedium />
-                </a>
-                <a href="https://x.com/BenPhillip49714" target="_blank" rel="noreferrer">
-                    <CiTwitter />
                 </a>
             </div>
         </div>
