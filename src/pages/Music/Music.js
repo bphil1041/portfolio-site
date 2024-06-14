@@ -6,13 +6,14 @@ import './Music.css';
 function Music() {
     const createSanitizedIframeHtml = (src, style, link) => {
         const sanitizedSrc = DOMPurify.sanitize(src);
-        const sanitizedStyle = DOMPurify.sanitize(style);
+        //const sanitizedStyle = DOMPurify.sanitize(style);
         const sanitizedLink = DOMPurify.sanitize(link);
+
 
         return `
             <iframe
-                style="${sanitizedStyle}"
                 src="${sanitizedSrc}"
+                style="width: 75%; height: 500px; border: 0;"
                 seamless
             >
                 ${sanitizedLink}
