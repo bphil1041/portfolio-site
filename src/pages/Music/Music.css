@@ -22,6 +22,9 @@
     border-radius: 1%;
     overflow: hidden;
     margin: 10%;
+    align-items: center;
+    /* Center vertically */
+
 }
 
 .transparent-card-body:hover {
