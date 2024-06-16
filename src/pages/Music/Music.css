@@ -21,10 +21,12 @@
     cursor: pointer;
     border-radius: 1%;
     overflow: hidden;
-    margin: 10%;
     align-items: center;
-    /* Center vertically */
+}
 
+.transparent-card-body.bandcamp {
+    padding: 10px 10px 30px 10px;
+    /* Specific padding for Bandcamp iframes */
 }
 
 .transparent-card-body:hover {
@@ -41,7 +43,7 @@
 .sub-title {
     padding-bottom: 20px;
     text-align: center;
-    padding: 0 25vw 0 25vw;
+    padding: 0 25vw;
     font-size: 1.6rem;
 }
 
@@ -67,6 +69,13 @@
 
     .transparent-card-body {
         margin: 2%;
+        padding: 10px 5px;
+        /* Adjusted padding */
+    }
+
+    .transparent-card-body.bandcamp {
+        padding: 5px 5px 15px 5px;
+        /* Specific padding for Bandcamp iframes */
     }
 
     .youtube-iframe {
@@ -87,6 +96,13 @@
 
     .transparent-card-body {
         margin: 2.5%;
+        padding: 15px 8px;
+        /* Adjusted padding */
+    }
+
+    .transparent-card-body.bandcamp {
+        padding: 8px 8px 25px 8px;
+        /* Specific padding for Bandcamp iframes */
     }
 
     .youtube-iframe {
@@ -107,6 +123,13 @@
 
     .transparent-card-body {
         margin: 10%;
+        padding: 20px 10px;
+        /* Adjusted padding */
+    }
+
+    .transparent-card-body.bandcamp {
+        padding: 10px 10px 30px 10px;
+        /* Specific padding for Bandcamp iframes */
     }
 
     .youtube-iframe {
