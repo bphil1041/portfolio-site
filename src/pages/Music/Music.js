@@ -6,14 +6,13 @@ import './Music.css';
 function Music() {
     const createSanitizedIframeHtml = (src, style, link) => {
         const sanitizedSrc = DOMPurify.sanitize(src);
-        //const sanitizedStyle = DOMPurify.sanitize(style);
+        const sanitizedStyle = DOMPurify.sanitize(style);
         const sanitizedLink = DOMPurify.sanitize(link);
-
 
         return `
             <iframe
                 src="${sanitizedSrc}"
-                style="width: 75%; height: 500px; border: 0;"
+                style="${sanitizedStyle}"
                 seamless
             >
                 ${sanitizedLink}
@@ -24,17 +23,17 @@ function Music() {
     const bandcampAlbums = [
         {
             src: "https://bandcamp.com/EmbeddedPlayer/album=4033009355/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/",
-            style: "border: 0; width: auto; height: 500px;",
+            style: "border: 0; width: 75%; height: 500px; padding-top: 5%;",
             link: '<a href="https://basselmusic.bandcamp.com/album/alone-at-night">Alone At Night by Bassel &amp; The Supernaturals</a>'
         },
         {
             src: "https://bandcamp.com/EmbeddedPlayer/album=2615524121/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/",
-            style: "border: 0; width: auto; height: 500px;",
+            style: "border: 0; width: 75%; height: 500px; padding-top: 5%;",
             link: '<a href="https://basselmusic.bandcamp.com/album/smoke-mirrors">Smoke &amp; Mirrors by Bassel &amp; The Supernaturals</a>'
         },
         {
             src: "https://bandcamp.com/EmbeddedPlayer/track=1866537782/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/",
-            style: "border: 0; width: auto; height: 500px;",
+            style: "border: 0; width: 75%; height: 500px; padding-top: 5%;",
             link: '<a href="https://basselmusic.bandcamp.com/track/sandman">Sandman by Bassel &amp; The Supernaturals</a>'
         },
     ];
