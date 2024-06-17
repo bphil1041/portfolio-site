@@ -15,6 +15,21 @@
     font-size: 1.6rem;
 }
 
+.skills {
+    padding-top: 5%;
+    text-shadow: 2px 2px #558ABB;
+
+}
+
+.skills-icons {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.icon {
+    padding: .5%;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 600px) {
     .about-title {
