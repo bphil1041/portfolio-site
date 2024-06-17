@@ -11,6 +11,10 @@
     text-align: center;
 }
 
+.download-link {
+    font-size: 1.6rem;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 600px) {
     .about-title {
