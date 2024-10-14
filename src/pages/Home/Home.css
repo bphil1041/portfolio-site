@@ -19,7 +19,6 @@
     border-width: 1px;
     height: auto;
     width: 80%;
-    max-width: 300px;
     /* Base max-width */
     display: block;
     margin-left: auto;
@@ -27,7 +26,7 @@
 }
 
 .hey {
-    padding: 0 20vw 3vh 20vw;
+    padding: 0 27vw 3vh 27vw;
     font-size: 1.25rem;
     text-align: center;
 }
@@ -36,6 +35,8 @@
 @media (max-width: 600px) {
     .home-title {
         font-size: 4rem;
+        padding-top: .01vh;
+
     }
 
     .home-subtitle {
@@ -47,7 +48,7 @@
     }
 
     .BenPhoto {
-        max-width: 300px;
+        max-width: 500px;
         /* Adjust max-width for small screens */
     }
 }
@@ -55,7 +56,7 @@
 /* Media query for medium screens */
 @media (min-width: 601px) and (max-width: 1200px) {
     .BenPhoto {
-        max-width: 400px;
+        max-width: 700px;
         /* Adjust max-width for medium screens */
     }
 }
@@ -63,7 +64,7 @@
 /* Media query for large screens */
 @media (min-width: 1201px) {
     .BenPhoto {
-        max-width: 500px;
+        max-width: 800px;
         /* Adjust max-width for large screens */
     }
 }
