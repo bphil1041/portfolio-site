@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-site/static/css/main.e7abe329.css",
-    "main.js": "/portfolio-site/static/js/main.56ac401d.js",
+    "main.js": "/portfolio-site/static/js/main.923e4b88.js",
     "static/js/453.534db5b8.chunk.js": "/portfolio-site/static/js/453.534db5b8.chunk.js",
     "static/media/IMG_0346 2.png": "/portfolio-site/static/media/IMG_0346 2.d13e20e1316f6fae1a75.png",
     "static/media/myflix-angular-screenshot.png": "/portfolio-site/static/media/myflix-angular-screenshot.b8f587eb2c2a4c1be5e9.png",
@@ -15,11 +15,11 @@
     "static/media/Phillips-Benjamin-resume.pdf": "/portfolio-site/static/media/Phillips-Benjamin-resume.bc574bb5c8180af3c8a2.pdf",
     "index.html": "/portfolio-site/index.html",
     "main.e7abe329.css.map": "/portfolio-site/static/css/main.e7abe329.css.map",
-    "main.56ac401d.js.map": "/portfolio-site/static/js/main.56ac401d.js.map",
+    "main.923e4b88.js.map": "/portfolio-site/static/js/main.923e4b88.js.map",
     "453.534db5b8.chunk.js.map": "/portfolio-site/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7abe329.css",
-    "static/js/main.56ac401d.js"
+    "static/js/main.923e4b88.js"
   ]
 }
