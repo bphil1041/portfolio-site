@@ -11,6 +11,9 @@ import { BsFiletypeScss } from "react-icons/bs";
 import { DiMongodb } from "react-icons/di";
 import { FaGithub } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { DiDjango } from "react-icons/di";
+
 
 
 const pdfFile = require('../../assets/Phillips-Benjamin-resume.pdf');
@@ -30,7 +33,8 @@ function About() {
                 <FaReact className='icon' /><IoLogoJavascript className='icon' />
                 <FaHtml5 className='icon' /><FaCss3Alt className='icon' /><BsFiletypeScss className='icon' />
                 <FaAngular className='icon' /><FaBootstrap className='icon' /><FaNodeJs className='icon' /><FaGithub className='icon' /><DiMongodb className='icon' />
-                <SiTypescript className='icon' />
+                <SiTypescript className='icon' /><FaPython className='icon' /><DiDjango className='icon' />
+
             </div>
 
 
