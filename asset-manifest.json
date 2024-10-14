@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-site/static/css/main.e7abe329.css",
-    "main.js": "/portfolio-site/static/js/main.1b651164.js",
+    "main.js": "/portfolio-site/static/js/main.a035f752.js",
     "static/js/453.534db5b8.chunk.js": "/portfolio-site/static/js/453.534db5b8.chunk.js",
     "static/media/IMG_0346 2.png": "/portfolio-site/static/media/IMG_0346 2.d13e20e1316f6fae1a75.png",
     "static/media/myflix-angular-screenshot.png": "/portfolio-site/static/media/myflix-angular-screenshot.b8f587eb2c2a4c1be5e9.png",
@@ -11,14 +11,14 @@
     "static/media/Screenshot 2024-03-05 at 11.46.28 PM 2.png": "/portfolio-site/static/media/Screenshot 2024-03-05 at 11.46.28 PM 2.cb10f3fb84a90f1d8890.png",
     "static/media/chat-app.png": "/portfolio-site/static/media/chat-app.30811ac1588be227b343.png",
     "static/media/Gengar.png": "/portfolio-site/static/media/Gengar.731262dbe3736bab0ea0.png",
-    "static/media/Phillips-Benjamin-resume.pdf": "/portfolio-site/static/media/Phillips-Benjamin-resume.a091b32d26d84002e11f.pdf",
+    "static/media/Phillips-Benjamin-resume.pdf": "/portfolio-site/static/media/Phillips-Benjamin-resume.bc574bb5c8180af3c8a2.pdf",
     "index.html": "/portfolio-site/index.html",
     "main.e7abe329.css.map": "/portfolio-site/static/css/main.e7abe329.css.map",
-    "main.1b651164.js.map": "/portfolio-site/static/js/main.1b651164.js.map",
+    "main.a035f752.js.map": "/portfolio-site/static/js/main.a035f752.js.map",
     "453.534db5b8.chunk.js.map": "/portfolio-site/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7abe329.css",
-    "static/js/main.1b651164.js"
+    "static/js/main.a035f752.js"
   ]
 }
