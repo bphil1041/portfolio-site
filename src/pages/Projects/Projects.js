@@ -10,6 +10,7 @@ import project5Image from '../../assets/Gengar.png';
 import project6Image from '../../assets/chat-app.png';
 import project7Image from '../../assets/myflix-angular-screenshot.png';
 import project8Image from '../../assets/recipease-image.png';
+import project9Image from '../../assets/ColorChord-screenshot.png';
 
 
 function Projects() {
@@ -26,6 +27,7 @@ function Projects() {
         { id: 5, name: 'Pokedex', image: project5Image, description: 'A simple Pokédex application that displays basic Pokémon information that is fetched from an API.<br> <br> Technologies used: <br> Javascript, HTML, and CSS. <br> <br> View the code <a href="https://github.com/bphil1041/Pokedex" target="_blank" rel="noreferrer"> on my GitHub.</a>' },
         { id: 6, name: 'Chat App', image: project6Image, description: 'A React Native Chat app that is designed to facilitate communcation between users. Users can share text messages, images, and their current location. <br> <br> View the code <a href="https://github.com/bphil1041/chat-demo" target="_blank" rel="noreferrer">on my GitHub</a>' },
         { id: 1, name: 'JavaScript Game', image: project1Image, description: 'In this JavaScript game you play as a baby dragon flying through the air and shooting down your enemies. This project started from a tutorial on FreeCodeCamp, but I branched off and made this project my own. This game is a work in progress, and you can test it out <a href="https://github.com/bphil1041/Javascript-game" target="_blank" rel="noreferrer" >on my GitHub</a>. For the best experience, please play the game on a computer in fullscreen. <br> <br> Technologies used: JavaScript, HTML, CSS.' },
+        { id: 9, name: 'ColorChord', image: project9Image, description: 'This project is a work in progress! The goal is to build a painting / music app where each brushtroke plays a note. There are twelve colors to choose from that correspond with all twelve pitches of Western music. The Front-End is built using React, Konva.js for managing the drawing canvas, Tone.js for sound generation and linking colors to musical notes, and Web Audio API for sound processing and playback. Follow along <a href="https://github.com/bphil1041/ColorChord" target="_blank" rel="noreferrer"> on my GitHub </a>  as I make progress!' },
 
         // Add more projects as needed
     ];
