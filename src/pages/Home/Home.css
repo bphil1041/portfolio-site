@@ -1,17 +1,61 @@
-.home-title {
+/* Arrow animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+    60% {
+      transform: translateY(5px);
+    }
+  }
+  
+  /* Scroll-down arrow */
+  .scroll-down {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: navajowhite;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    user-select: none; /* Prevents text selection */
+  }
+  
+  .scroll-down:hover {
+    color: #558ABB; /* Changes color on hover */
+  }
+  
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 3.5s ease-in-out;
+  }
+  
+  /* Existing styles */
+  .home-title {
     font-size: 7rem;
     font-weight: bold;
     text-shadow: 3px 3px #558ABB;
     padding-top: 15vh;
     text-align: center;
-}
-
-.home-subtitle {
+  }
+  
+  .home-subtitle {
     font-size: 2rem;
     text-align: center;
-}
-
-.BenPhoto {
+  }
+  
+  .BenPhoto {
     border-radius: 50%;
     margin-bottom: 30px;
     border-style: solid;
@@ -19,52 +63,48 @@
     border-width: 1px;
     height: auto;
     width: 80%;
-    /* Base max-width */
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.hey {
+  }
+  
+  .hey {
     padding: 0 27vw 3vh 27vw;
     font-size: 1.25rem;
     text-align: center;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 600px) {
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
     .home-title {
-        font-size: 4rem;
-        padding-top: .01vh;
-
+      font-size: 4rem;
+      padding-top: .01vh;
     }
-
+  
     .home-subtitle {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-
+  
     .about-me {
-        padding: 0 5vw 3vh 5vw;
+      padding: 0 5vw 3vh 5vw;
     }
-
+  
     .BenPhoto {
-        max-width: 500px;
-        /* Adjust max-width for small screens */
+      max-width: 500px;
     }
-}
-
-/* Media query for medium screens */
-@media (min-width: 601px) and (max-width: 1200px) {
+  }
+  
+  /* Media query for medium screens */
+  @media (min-width: 601px) and (max-width: 1200px) {
     .BenPhoto {
-        max-width: 700px;
-        /* Adjust max-width for medium screens */
+      max-width: 700px;
     }
-}
-
-/* Media query for large screens */
-@media (min-width: 1201px) {
+  }
+  
+  /* Media query for large screens */
+  @media (min-width: 1201px) {
     .BenPhoto {
-        max-width: 800px;
-        /* Adjust max-width for large screens */
+      max-width: 800px;
     }
-}
+  }
+  

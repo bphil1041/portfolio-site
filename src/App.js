@@ -130,7 +130,9 @@ function App() {
 
       <div className="content-container">
         <ContentContainer>
-          <Page ref={homeRef}><Home /></Page>
+          <Page ref={homeRef}>
+            <Home scrollToSection={scrollToSection} aboutRef={aboutRef} />
+          </Page>
           <Page ref={aboutRef}><About /></Page>
           <Page ref={projectsRef}><Projects /></Page>
           <Page ref={musicRef}><Music /></Page>
