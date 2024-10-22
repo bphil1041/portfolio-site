@@ -26,9 +26,36 @@
     color: #558ABB; /* Changes color on hover */
   }
   
-
-/* Fade-in animation */
-@keyframes fadeIn {
+  /* Sound buttons */
+  .sound-controls {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .sound-on, .sound-off {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #558ABB;
+    border-radius: 5px;
+    background-color: transparent;
+    color: navajowhite;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .sound-on:hover, .sound-off:hover {
+    background-color: #558ABB;
+    color: white;
+  }
+  
+  .sound-on:active, .sound-off:active {
+    background-color: #446b9e; /* Darker shade on active click */
+    color: white;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
     from {
       opacity: 0;
     }
@@ -38,7 +65,7 @@
   }
   
   .fade-in {
-    animation: fadeIn 3.5s ease-in-out;
+    animation: fadeIn 5s ease-in-out;
   }
   
   /* Existing styles */
@@ -68,11 +95,11 @@
     margin-right: auto;
   }
   
-  .hey {
-    padding: 0 27vw 3vh 27vw;
-    font-size: 1.25rem;
-    text-align: center;
+  .arrow-text {
+    font-size: 1.5rem;
   }
+
+  
   
   /* Media query for smaller screens */
   @media (max-width: 600px) {
@@ -85,12 +112,13 @@
       font-size: 1.5rem;
     }
   
-    .about-me {
-      padding: 0 5vw 3vh 5vw;
-    }
-  
     .BenPhoto {
       max-width: 500px;
+    }
+  
+    .sound-on, .sound-off {
+      font-size: 1.25rem;
+      padding: 8px 15px;
     }
   }
   

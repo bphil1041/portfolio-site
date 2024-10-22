@@ -1,3 +1,4 @@
+/* Base Navbar styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,6 @@
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
-    /* Allow items to wrap onto a new line */
 }
 
 .navbar-nav li {
@@ -52,6 +52,7 @@
     color: ivory;
 }
 
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .navbar {
         font-size: medium;
@@ -88,23 +89,56 @@
     }
 }
 
+/* Gradient background for the navbar */
 .navbar {
     background: linear-gradient(90deg, #000000, #050018, #00081c, #00027c);
     background-size: 400% 400%;
     animation: gradient 50s ease infinite;
-
 }
 
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 50%;
     }
-
     100% {
         background-position: 0% 50%;
     }
+}
+
+/* Sound buttons in the navbar */
+.navbar-sound-controls {
+    display: flex;
+    gap: 10px; /* Space between the buttons */
+}
+
+.navbar-sound-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid #558ABB;
+    border-radius: 5px;
+    background-color: transparent;
+    color: navajowhite;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-sound-button.active {
+    background-color: #558ABB;
+    color: white;
+}
+
+.navbar-sound-button:hover {
+    background-color: #446b9e; /* Darker shade on hover */
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .navbar-sound-button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
 }
