@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.969cf16d.css",
-    "main.js": "/portfolio-site/static/js/main.5e0ca638.js",
+    "main.css": "/portfolio-site/static/css/main.37afd3c3.css",
+    "main.js": "/portfolio-site/static/js/main.43da7909.js",
     "static/js/453.534db5b8.chunk.js": "/portfolio-site/static/js/453.534db5b8.chunk.js",
     "static/media/IMG_0346 2.png": "/portfolio-site/static/media/IMG_0346 2.d13e20e1316f6fae1a75.png",
+    "static/media/3. AbandonedShip.wav": "/portfolio-site/static/media/3. AbandonedShip.7e2daa37b519ef0b9f96.wav",
     "static/media/myflix-angular-screenshot.png": "/portfolio-site/static/media/myflix-angular-screenshot.b8f587eb2c2a4c1be5e9.png",
     "static/media/movie_api_doc.png": "/portfolio-site/static/media/movie_api_doc.1f18d5fdb95451bb43db.png",
     "static/media/myFlixScreenshot.png": "/portfolio-site/static/media/myFlixScreenshot.66731e1c3b7f09d2a709.png",
     "static/media/Meet App.png": "/portfolio-site/static/media/Meet App.cfd04113d6526c2c3fd1.png",
     "static/media/Screenshot 2024-03-05 at 11.46.28 PM 2.png": "/portfolio-site/static/media/Screenshot 2024-03-05 at 11.46.28 PM 2.cb10f3fb84a90f1d8890.png",
     "static/media/recipease-image.png": "/portfolio-site/static/media/recipease-image.f251a98d523c1d337d3f.png",
+    "static/media/dank_noise.wav": "/portfolio-site/static/media/dank_noise.e1f3fb8d9ec809b73165.wav",
     "static/media/chat-app.png": "/portfolio-site/static/media/chat-app.30811ac1588be227b343.png",
     "static/media/Gengar.png": "/portfolio-site/static/media/Gengar.731262dbe3736bab0ea0.png",
+    "static/media/13_ui_space_notification2.wav": "/portfolio-site/static/media/13_ui_space_notification2.78741cec1d30925680d7.wav",
+    "static/media/space_ui_edit.wav": "/portfolio-site/static/media/space_ui_edit.a5204b6a98970b72761d.wav",
     "static/media/Phillips-Benjamin-resume.pdf": "/portfolio-site/static/media/Phillips-Benjamin-resume.bc574bb5c8180af3c8a2.pdf",
     "static/media/ColorChord-screenshot.png": "/portfolio-site/static/media/ColorChord-screenshot.8c4e07ac9dfd317c18f9.png",
+    "static/media/06_ui_space_toggle_off.wav": "/portfolio-site/static/media/06_ui_space_toggle_off.6bdff5863dcccfc725ae.wav",
     "index.html": "/portfolio-site/index.html",
-    "main.969cf16d.css.map": "/portfolio-site/static/css/main.969cf16d.css.map",
-    "main.5e0ca638.js.map": "/portfolio-site/static/js/main.5e0ca638.js.map",
+    "main.37afd3c3.css.map": "/portfolio-site/static/css/main.37afd3c3.css.map",
+    "main.43da7909.js.map": "/portfolio-site/static/js/main.43da7909.js.map",
     "453.534db5b8.chunk.js.map": "/portfolio-site/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.969cf16d.css",
-    "static/js/main.5e0ca638.js"
+    "static/css/main.37afd3c3.css",
+    "static/js/main.43da7909.js"
   ]
 }
