@@ -113,7 +113,7 @@ function App() {
   return (
     <div className="App">
       <SparkleContainer>
-        {[...Array(150)].map((_, index) => (
+        {[...Array(300)].map((_, index) => (
           <Sparkle
             key={index}
             style={{
