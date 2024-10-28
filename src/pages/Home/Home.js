@@ -17,6 +17,7 @@ function Home({ scrollToSection, aboutRef }) {
         <div className='fade-in'>
             <h1 className='home-title'>Ben Phillips</h1>
             <p className='home-subtitle'>Full-Stack Web Developer / Musician</p>
+            <p className='home-location'>Chicago, IL</p>
             <img className='BenPhoto' alt='Ben Phillips playing the trumpet with blue and purple lighting.' src={BenPhoto}></img>
 
             {/* Trigger scroll on click */}
