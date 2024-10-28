@@ -81,6 +81,10 @@
     font-size: 2rem;
     text-align: center;
   }
+
+  .home-location {
+    font-size: 2rem;
+  }
   
   .BenPhoto {
     border-radius: 50%;
