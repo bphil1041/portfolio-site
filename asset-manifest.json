@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.78adff78.css",
-    "main.js": "/portfolio-site/static/js/main.5bbf8f5d.js",
+    "main.css": "/portfolio-site/static/css/main.37b641cf.css",
+    "main.js": "/portfolio-site/static/js/main.1c398bdb.js",
     "static/js/453.534db5b8.chunk.js": "/portfolio-site/static/js/453.534db5b8.chunk.js",
     "static/media/IMG_0346 2.png": "/portfolio-site/static/media/IMG_0346 2.d13e20e1316f6fae1a75.png",
     "static/media/3. AbandonedShip.wav": "/portfolio-site/static/media/3. AbandonedShip.7e2daa37b519ef0b9f96.wav",
@@ -17,16 +17,16 @@
     "static/media/Gengar.png": "/portfolio-site/static/media/Gengar.731262dbe3736bab0ea0.png",
     "static/media/13_ui_space_notification2.wav": "/portfolio-site/static/media/13_ui_space_notification2.78741cec1d30925680d7.wav",
     "static/media/space_ui_edit.wav": "/portfolio-site/static/media/space_ui_edit.a5204b6a98970b72761d.wav",
+    "static/media/color-chord-2.png": "/portfolio-site/static/media/color-chord-2.cba4d57d0c5aa6afaaaf.png",
     "static/media/Phillips-Benjamin-resume.pdf": "/portfolio-site/static/media/Phillips-Benjamin-resume.bc574bb5c8180af3c8a2.pdf",
-    "static/media/ColorChord-screenshot.png": "/portfolio-site/static/media/ColorChord-screenshot.8c4e07ac9dfd317c18f9.png",
     "static/media/06_ui_space_toggle_off.wav": "/portfolio-site/static/media/06_ui_space_toggle_off.6bdff5863dcccfc725ae.wav",
     "index.html": "/portfolio-site/index.html",
-    "main.78adff78.css.map": "/portfolio-site/static/css/main.78adff78.css.map",
-    "main.5bbf8f5d.js.map": "/portfolio-site/static/js/main.5bbf8f5d.js.map",
+    "main.37b641cf.css.map": "/portfolio-site/static/css/main.37b641cf.css.map",
+    "main.1c398bdb.js.map": "/portfolio-site/static/js/main.1c398bdb.js.map",
     "453.534db5b8.chunk.js.map": "/portfolio-site/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78adff78.css",
-    "static/js/main.5bbf8f5d.js"
+    "static/css/main.37b641cf.css",
+    "static/js/main.1c398bdb.js"
   ]
 }
