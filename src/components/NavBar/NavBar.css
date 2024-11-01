@@ -13,6 +13,21 @@
     border-bottom: ridge;
     border-width: 2px;
     border-color: navajowhite;
+    background: linear-gradient(90deg, #000000, #050018, #00081c, #00027c);
+    background-size: 400% 400%;
+    animation: gradient 50s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .navbar-brand {
@@ -25,6 +40,14 @@
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
+}
+
+/* Navbar links */
+.navbar-links {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right on desktop */
+    gap: 10px;
+    width: 100%; /* Ensures full width */
 }
 
 .navbar-nav li {
@@ -40,10 +63,6 @@
     text-decoration: underline;
 }
 
-.navbar-right {
-    margin-left: auto;
-}
-
 .nav-link {
     margin: 10px;
 }
@@ -52,8 +71,42 @@
     color: ivory;
 }
 
+/* Sound buttons in the navbar */
+.navbar-sound-controls {
+    display: flex;
+    gap: 10px; /* Space between the buttons */
+    flex-direction: row;
+}
+
+.navbar-sound-button {
+    padding: 8px 15px; /* Adjust padding for better text alignment */
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid #558ABB;
+    border-radius: 5px;
+    background-color: transparent;
+    color: navajowhite;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap; /* Prevents text wrapping */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers text horizontally */
+}
+
+.navbar-sound-button.active {
+    background-color: #558ABB;
+    color: white;
+}
+
+.navbar-sound-button:hover {
+    background-color: #446b9e; /* Darker shade on hover */
+    color: white;
+}
+
+
+
 /* Responsive design for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .navbar {
         font-size: medium;
     }
@@ -68,6 +121,24 @@
 
     .nav-link {
         margin: 5px;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers all content */
+    }
+
+    /* Center navbar-links in dropdown */
+    .navbar-links {
+        justify-content: center; /* Centers links in dropdown */
+    }
+
+    /* Center sound controls in dropdown */
+    .navbar-sound-controls {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
     }
 }
 
@@ -87,58 +158,15 @@
     .nav-link {
         margin: 3px;
     }
-}
 
-/* Gradient background for the navbar */
-.navbar {
-    background: linear-gradient(90deg, #000000, #050018, #00081c, #00027c);
-    background-size: 400% 400%;
-    animation: gradient 50s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
+    .navbar-sound-controls {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
     }
-    50% {
-        background-position: 100% 50%;
+
+    .navbar-sound-button {
+        font-size: 1rem;
+        padding: 8px 15px;
     }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Sound buttons in the navbar */
-.navbar-sound-controls {
-    display: flex;
-    gap: 10px; /* Space between the buttons */
-}
-
-.navbar-sound-button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border: 2px solid #558ABB;
-    border-radius: 5px;
-    background-color: transparent;
-    color: navajowhite;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.navbar-sound-button.active {
-    background-color: #558ABB;
-    color: white;
-}
-
-.navbar-sound-button:hover {
-    background-color: #446b9e; /* Darker shade on hover */
-    color: white;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .navbar-sound-button {
-    font-size: 1rem;
-    padding: 8px 15px;
-  }
 }
