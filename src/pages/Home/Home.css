@@ -116,6 +116,11 @@
     .home-subtitle {
       font-size: 1.5rem;
     }
+
+    .home-location {
+      font-size: 1.5rem;
+
+    }
   
     .BenPhoto {
       max-width: 500px;
