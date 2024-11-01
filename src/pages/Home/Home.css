@@ -80,11 +80,15 @@
   .home-subtitle {
     font-size: 2rem;
     text-align: center;
+    text-shadow: 1px 1px #558ABB;
+
   }
 
   .home-location {
     font-size: 2rem;
     text-align: center;
+    text-shadow: 1px 1px #558ABB;
+
   }
   
   .BenPhoto {
@@ -102,6 +106,11 @@
   
   .arrow-text {
     font-size: 1.5rem;
+  }
+
+  .scroll-down {
+    text-shadow: 1.5px 1.5px #558ABB;
+
   }
 
   
