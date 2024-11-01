@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.8c11ab49.css",
-    "main.js": "/portfolio-site/static/js/main.1c398bdb.js",
+    "main.css": "/portfolio-site/static/css/main.c4aa56d6.css",
+    "main.js": "/portfolio-site/static/js/main.b01f25dc.js",
     "static/js/453.534db5b8.chunk.js": "/portfolio-site/static/js/453.534db5b8.chunk.js",
     "static/media/IMG_0346 2.png": "/portfolio-site/static/media/IMG_0346 2.d13e20e1316f6fae1a75.png",
     "static/media/3. AbandonedShip.wav": "/portfolio-site/static/media/3. AbandonedShip.7e2daa37b519ef0b9f96.wav",
@@ -21,12 +21,12 @@
     "static/media/Phillips-Benjamin-resume.pdf": "/portfolio-site/static/media/Phillips-Benjamin-resume.bc574bb5c8180af3c8a2.pdf",
     "static/media/06_ui_space_toggle_off.wav": "/portfolio-site/static/media/06_ui_space_toggle_off.6bdff5863dcccfc725ae.wav",
     "index.html": "/portfolio-site/index.html",
-    "main.8c11ab49.css.map": "/portfolio-site/static/css/main.8c11ab49.css.map",
-    "main.1c398bdb.js.map": "/portfolio-site/static/js/main.1c398bdb.js.map",
+    "main.c4aa56d6.css.map": "/portfolio-site/static/css/main.c4aa56d6.css.map",
+    "main.b01f25dc.js.map": "/portfolio-site/static/js/main.b01f25dc.js.map",
     "453.534db5b8.chunk.js.map": "/portfolio-site/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c11ab49.css",
-    "static/js/main.1c398bdb.js"
+    "static/css/main.c4aa56d6.css",
+    "static/js/main.b01f25dc.js"
   ]
 }
