@@ -61,6 +61,7 @@
 
 .navbar-nav a:hover {
     text-decoration: underline;
+    color: #558ABB;
 }
 
 .nav-link {
@@ -91,6 +92,8 @@
     display: flex;
     align-items: center;
     justify-content: center; /* Centers text horizontally */
+    font-family: roboto;
+
 }
 
 .navbar-sound-button.active {
