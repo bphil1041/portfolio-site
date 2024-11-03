@@ -17,7 +17,7 @@ function NavBar({ scrollToSection, refs }) {
 
   return (
     <Navbar
-      className={`navbar ${expanded ? "dropdown-navbar" : ""}`} // Apply dropdown-navbar class when expanded
+      className={`navbar ${expanded ? "dropdown-navbar" : ""}`}
       variant="dark"
       expand="lg"
       expanded={expanded}
@@ -64,15 +64,15 @@ function NavBar({ scrollToSection, refs }) {
           >
             Contact
           </Nav.Link>
-        </Nav>
-        <div className="navbar-sound-controls">
-          <button
-            className={`navbar-sound-button ${isSoundOn ? "active" : ""}`}
+          <Nav.Link
+            className={`nav-link navbar-sound-button ${
+              isSoundOn ? "active" : ""
+            }`}
             onClick={toggleSound}
           >
             {isSoundOn ? "Sound Off" : "Sound On"}
-          </button>
-        </div>
+          </Nav.Link>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   );
