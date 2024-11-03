@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { useSound } from "../../context/SoundContext";
 import "./NavBar.css";
@@ -6,6 +6,7 @@ import "./NavBar.css";
 function NavBar({ scrollToSection, refs }) {
   const [activeLink, setActiveLink] = useState(null);
   const [expanded, setExpanded] = useState(false);
+  const [isVisible, setIsVisible] = useState(true); // Initially visible on page load
   const { isSoundOn, toggleSound, playNotification } = useSound();
 
   const handleNavLinkClick = (index, sectionRef) => {
@@ -15,9 +16,35 @@ function NavBar({ scrollToSection, refs }) {
     setExpanded(false);
   };
 
+  const handleMouseMove = (e) => {
+    if (e.clientY < 115) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    // Show navbar for a few seconds on page load
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+    }, 3000); // Adjust delay time in milliseconds (3000ms = 3 seconds)
+
+    // Add mousemove event listener to control navbar visibility
+    window.addEventListener("mousemove", handleMouseMove);
+
+    // Clear timer and remove event listener on cleanup
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
     <Navbar
-      className={`navbar ${expanded ? "dropdown-navbar" : ""}`}
+      className={`navbar ${isVisible ? "visible" : "hidden"} ${
+        expanded ? "dropdown-navbar" : ""
+      }`}
       variant="dark"
       expand="lg"
       expanded={expanded}
