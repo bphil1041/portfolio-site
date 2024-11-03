@@ -1,25 +1,26 @@
-import React, { useRef, useState, useEffect } from 'react';
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import Home from './pages/Home/Home';
-import Projects from './pages/Projects/Projects';
-import Contact from './pages/Contact/Contact';
-import Music from './pages/Music/Music';
-import About from './pages/About/About';
-import styled, { keyframes } from 'styled-components';
+import React, { useRef, useState, useEffect } from "react";
+import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+import Home from "./pages/Home/Home";
+import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
+import Music from "./pages/Music/Music";
+import About from "./pages/About/About";
+import styled, { keyframes } from "styled-components";
+import { SoundProvider } from "./context/SoundContext";
 
 const CursorWrapper = styled.div`
-    width: 40px;
-    height: 40px;
-    background-color: navajowhite;
-    border-radius: 50%;
-    border-color: #558ABB;
-    border-width: 10px;
-    position: absolute;
-    pointer-events: none;
-    box-shadow: 0 0 60px navajowhite; 
-    opacity: .55;
-    z-index: 1;
+  width: 40px;
+  height: 40px;
+  background-color: navajowhite;
+  border-radius: 50%;
+  border-color: #558abb;
+  border-width: 10px;
+  position: absolute;
+  pointer-events: none;
+  box-shadow: 0 0 60px navajowhite;
+  opacity: 0.55;
+  z-index: 1;
 `;
 
 const ContentContainer = styled.div`
@@ -53,9 +54,7 @@ const Cursor = ({ delay }) => {
     };
   }, [delay]);
 
-  return (
-    <CursorWrapper style={{ top: position.y, left: position.x }} />
-  );
+  return <CursorWrapper style={{ top: position.y, left: position.x }} />;
 };
 
 const sparklePulse = keyframes`
@@ -86,7 +85,8 @@ const Sparkle = styled.div`
   width: 2px;
   height: 2px;
   background-color: navajowhite;
-  animation: ${sparklePulse} 2s linear infinite, sparkleScroll 50s linear infinite;
+  animation: ${sparklePulse} 2s linear infinite,
+    sparkleScroll 50s linear infinite;
   opacity: 0;
 
   @keyframes sparkleScroll {
@@ -107,39 +107,52 @@ function App() {
   const aboutRef = useRef(null);
 
   const scrollToSection = (sectionRef) => {
-    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    sectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className="App">
-      <SparkleContainer>
-        {[...Array(300)].map((_, index) => (
-          <Sparkle
-            key={index}
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 2}s`,
-            }}
-          />
-        ))}
-      </SparkleContainer>
+    <SoundProvider>
+      <div className="App">
+        <SparkleContainer>
+          {[...Array(300)].map((_, index) => (
+            <Sparkle
+              key={index}
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 2}s`,
+              }}
+            />
+          ))}
+        </SparkleContainer>
 
-      <NavBar scrollToSection={scrollToSection} refs={{ homeRef, aboutRef, projectsRef, musicRef, contactRef }} />
-      <Cursor delay={250} />
+        <NavBar
+          scrollToSection={scrollToSection}
+          refs={{ homeRef, aboutRef, projectsRef, musicRef, contactRef }}
+        />
+        <Cursor delay={250} />
 
-      <div className="content-container">
-        <ContentContainer>
-          <Page ref={homeRef}>
-            <Home scrollToSection={scrollToSection} aboutRef={aboutRef} />
-          </Page>
-          <Page ref={aboutRef}><About /></Page>
-          <Page ref={projectsRef}><Projects /></Page>
-          <Page ref={musicRef}><Music /></Page>
-          <Page ref={contactRef}><Contact /></Page>
-        </ContentContainer>
+        <div className="content-container">
+          <ContentContainer>
+            <Page ref={homeRef}>
+              <Home scrollToSection={scrollToSection} aboutRef={aboutRef} />
+            </Page>
+            <Page ref={aboutRef}>
+              <About />
+            </Page>
+            <Page ref={projectsRef}>
+              <Projects />
+            </Page>
+            <Page ref={musicRef}>
+              <Music />
+            </Page>
+            <Page ref={contactRef}>
+              <Contact />
+            </Page>
+          </ContentContainer>
+        </div>
       </div>
-    </div>
+    </SoundProvider>
   );
 }
 
