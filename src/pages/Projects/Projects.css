@@ -20,19 +20,34 @@
 }
 
 .modalButton {
-    background-color: black;
+    display: inline-flex; /* Constrains the button to its content width */
+    width: auto; /* Ensures it doesn’t expand to full width */
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid #558ABB;
+    border-radius: 5px;
+    background-color: transparent;
     color: navajowhite;
-    font-family: 'roboto';
-    width: 100%;
-    border-color: navajowhite;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-family: roboto;
+    margin: 20px auto; /* Center-aligns it within the div if desired */
+    text-align: center;
+}
+
+.modalButton.active {
+    background-color: #558ABB;
+    color: white;
 }
 
 .modalButton:hover {
-    background-color: maroon;
-    color: navajowhite;
-    border-color: navajowhite;
-    transform: scale(1.1);
+    background-color: #558ABB;
+    color: white;
 }
+
 
 .modalTitle {
     font-family: 'roboto';
@@ -46,6 +61,8 @@
     background-color: black;
     text-align: left;
     font-size: 1.6rem;
+
+
 }
 
 .card-text {
