@@ -10,9 +10,9 @@
     position: fixed;
     width: 100%;
     z-index: 1;
-    border-bottom: ridge;
+    /*border-bottom: ridge;
     border-width: 2px;
-    border-color: navajowhite;
+    border-color: navajowhite;*/
     background: linear-gradient(90deg, #000000, #050018, #00081c, #00027c);
     background-size: 400% 400%;
     animation: gradient 50s ease infinite;
@@ -92,7 +92,6 @@
     display: flex;
     align-items: center;
     justify-content: center; /* Centers text horizontally */
-    font-family: roboto;
 
 }
 
