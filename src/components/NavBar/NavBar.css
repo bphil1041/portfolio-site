@@ -10,9 +10,6 @@
     position: fixed;
     width: 100%;
     z-index: 1;
-    /*border-bottom: ridge;
-    border-width: 2px;
-    border-color: navajowhite;*/
     background: linear-gradient(90deg, #000000, #050018, #00081c, #00027c);
     background-size: 400% 400%;
     animation: gradient 50s ease infinite;
@@ -36,78 +33,48 @@
     text-shadow: 2px 2px #558ABB;
 }
 
-.navbar-nav {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-}
-
-/* Navbar links */
+/* Navbar links container styled for desktop */
 .navbar-links {
     display: flex;
-    justify-content: flex-end; /* Align links to the right on desktop */
-    gap: 10px;
-    width: 100%; /* Ensures full width */
+    align-items: center;
+    margin-left: auto; /* Aligns links and buttons to the right in desktop */
 }
 
-.navbar-nav li {
-    margin-right: 10px;
-}
-
-.navbar-nav a {
-    color: navajowhite;
-    text-decoration: none;
-}
-
-.navbar-nav a:hover {
-    text-decoration: underline;
-    color: #558ABB;
-}
-
-.nav-link {
-    margin: 10px;
-}
-
-.navbar-nav a.nav-link.active {
-    color: ivory;
-}
-
-/* Sound buttons in the navbar */
-.navbar-sound-controls {
-    display: flex;
-    gap: 10px; /* Space between the buttons */
-    flex-direction: row;
-}
-
+/* Navbar links and button styling */
+.navbar-nav .nav-link,
 .navbar-sound-button {
-    padding: 8px 15px; /* Adjust padding for better text alignment */
+    display: inline-flex;
+    width: auto;
+    padding: 8px 15px; /* Ensures consistent padding */
     font-size: 1.2rem;
     cursor: pointer;
-    border: 2px solid #558ABB;
+    border: 2px solid #558ABB; /* Consistent border width */
     border-radius: 5px;
     background-color: transparent;
     color: navajowhite;
     transition: background-color 0.3s, color 0.3s;
-    white-space: nowrap; /* Prevents text wrapping */
-    display: flex;
+    white-space: nowrap;
     align-items: center;
-    justify-content: center; /* Centers text horizontally */
-
+    justify-content: center;
+    font-family: roboto;
+    min-width: 120px; /* Ensures uniform button width */
+    text-align: center;
+    margin: 5px; /* Spacing between buttons */
 }
 
+.navbar-nav .nav-link.active,
 .navbar-sound-button.active {
     background-color: #558ABB;
     color: white;
 }
 
+.navbar-nav .nav-link:hover,
 .navbar-sound-button:hover {
-    background-color: #446b9e; /* Darker shade on hover */
+    background-color: #446b9e;
     color: white;
 }
 
-
-
-/* Responsive design for smaller screens */
+/* Responsive styling for smaller screens */
 @media (max-width: 992px) {
     .navbar {
         font-size: medium;
@@ -117,26 +84,17 @@
         font-size: 2em;
     }
 
-    .navbar-nav li {
-        margin-right: 5px;
-    }
-
-    .nav-link {
-        margin: 5px;
-    }
-
     .navbar-collapse {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centers all content */
+        align-items: center; /* Centers items in dropdown */
     }
 
-    /* Center navbar-links in dropdown */
     .navbar-links {
-        justify-content: center; /* Centers links in dropdown */
+        justify-content: center; /* Centers buttons in dropdown */
+        width: 100%; /* Ensures full width in dropdown */
     }
 
-    /* Center sound controls in dropdown */
     .navbar-sound-controls {
         width: 100%;
         justify-content: center;
@@ -153,20 +111,7 @@
         font-size: 1.5em;
     }
 
-    .navbar-nav li {
-        margin-right: 3px;
-    }
-
-    .nav-link {
-        margin: 3px;
-    }
-
-    .navbar-sound-controls {
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
+    .navbar-nav .nav-link,
     .navbar-sound-button {
         font-size: 1rem;
         padding: 8px 15px;
