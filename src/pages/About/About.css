@@ -12,7 +12,33 @@
 }
 
 .download-link {
-    font-size: 1.6rem;
+    display: inline-flex; /* Constrains the button to its content width */
+    width: auto; /* Ensures it doesn’t expand to full width */
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid #558ABB;
+    border-radius: 5px;
+    background-color: transparent;
+    color: navajowhite;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-family: roboto;
+    margin: 20px auto; /* Center-aligns it within the div if desired */
+    text-align: center;
+}
+
+
+.download-link.active {
+    background-color: #558ABB;
+    color: white;
+}
+
+.download-link:hover {
+    background-color: #446b9e; /* Darker shade on hover */
+    color: white;
 }
 
 .skills {
