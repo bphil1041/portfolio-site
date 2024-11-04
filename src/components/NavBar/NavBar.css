@@ -13,21 +13,7 @@
     background: linear-gradient(90deg, #000000, #050018, #00081c, #00027c);
     background-size: 400% 400%;
     animation: gradient 50s ease infinite;
-    transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
-.hidden {
-    opacity: 0;
-    transform: translateY(-100%);
-}
-
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Rest of your CSS remains unchanged */
-
 
 @keyframes gradient {
     0% {
