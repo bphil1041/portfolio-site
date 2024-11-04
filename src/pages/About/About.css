@@ -1,3 +1,20 @@
+/* Container for About and Skills sections */
+.about-skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.about-section, .skills-section {
+    flex: 1;
+}
+
+.about-section {
+    margin-right: 2vw; /* Spacing between About and Skills sections */
+}
+
+/* About Section Styles */
 .about-title {
     font-size: 7rem;
     text-shadow: 3px 3px #558ABB;
@@ -6,14 +23,15 @@
 }
 
 .about-content {
-    padding: 0 20vw 3vh 20vw;
     font-size: 1.25rem;
     text-align: left;
+    padding: 0 5vw;
 }
 
+/* Download link styling remains the same */
 .download-link {
-    display: inline-flex; /* Constrains the button to its content width */
-    width: auto; /* Ensures it doesn’t expand to full width */
+    display: inline-flex;
+    width: auto;
     padding: 8px 15px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -26,10 +44,9 @@
     align-items: center;
     justify-content: center;
     font-family: roboto;
-    margin: 20px auto; /* Center-aligns it within the div if desired */
+    margin: 20px auto;
     text-align: center;
 }
-
 
 .download-link.active {
     background-color: #558ABB;
@@ -37,57 +54,94 @@
 }
 
 .download-link:hover {
-    background-color: #446b9e; /* Darker shade on hover */
+    background-color: #446b9e;
     color: white;
 }
 
-.skills {
+/* Skills Section Styles */
+.skills-section {
     padding-top: 5%;
     text-shadow: 2px 2px #558ABB;
-
 }
 
 .skills-icons {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Max four icons per row */
+    gap: 30px; /* Increased spacing between icons */
+    justify-items: center;
+    padding: 2vh 5vw;
 }
 
 .icon {
-    padding: .5%;
+    font-size: 2.5rem; /* Slightly larger icon size */
+    color: #558ABB;
+    transition: color 0.3s;
 }
 
-/* Media query for smaller screens */
+.icon:hover {
+    color: #446b9e;
+}
+
+/* Responsive Layout Adjustments */
+
+/* Small screens */
 @media (max-width: 600px) {
+    .about-skills-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
     .about-title {
         font-size: 4rem;
     }
 
-    .about-content {
-        padding: 0 5vw 3vh 5vw;
-        font-size: 1rem;
+    .about-content, .skills-section {
+        padding: 0 5vw;
+    }
+
+    .skills-icons {
+        grid-template-columns: repeat(2, 1fr); /* Two icons per row */
+        gap: 20px; /* Slightly reduced spacing */
+        padding-left: 0;
     }
 }
 
-/* Media query for medium screens */
+/* Medium screens */
 @media (min-width: 601px) and (max-width: 1200px) {
+    .about-skills-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
     .about-title {
         font-size: 5rem;
     }
 
     .about-content {
-        padding: 0 10vw 3vh 10vw;
+        padding: 0 10vw;
         font-size: 1.1rem;
+    }
+
+    .skills-icons {
+        grid-template-columns: repeat(3, 1fr); /* Three icons per row */
+        gap: 25px; /* Medium spacing */
+        padding: 0 10vw;
     }
 }
 
-/* Media query for large screens */
+/* Large screens */
 @media (min-width: 1201px) {
+    .about-skills-container {
+        flex-direction: row;
+        padding: 0 5vw;
+    }
+
     .about-title {
         font-size: 7rem;
     }
 
     .about-content {
-        padding: 0 20vw 3vh 20vw;
+        padding: 0 5vw;
         font-size: 1.25rem;
     }
 }
