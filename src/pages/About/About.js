@@ -53,8 +53,8 @@ function About() {
         </p>
         <p className="about-content">
           In addition to coding and music, I also enjoy Muay Thai, biking,
-          cooking, tending to my houseplants, and spending time with my friends
-          and family.
+          chess, cooking, tending to my houseplants, and spending time with my
+          friends and family.
         </p>
 
         <a
