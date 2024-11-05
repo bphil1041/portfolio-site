@@ -25,10 +25,10 @@ function Contact() {
         {/* Trigger sound when email link is clicked */}
         <a
           className="email"
-          href="mailto:benjamin.r.phillips1041@gmail.com"
+          href="mailto:bphillipsdev1041@gmail.com"
           onClick={playOpenSound}
         >
-          benjamin.r.phillips1041@gmail.com
+          bphillipsdev1041@gmail.com
         </a>
       </p>
       <br />
