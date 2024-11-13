@@ -62,6 +62,9 @@
 .skills-section {
     margin-top: 15vh;
     text-shadow: 2px 2px #558ABB;
+    font-size: 7rem;
+    margin-top: 15vh;
+
 }
 
 .skills-icons {
@@ -73,7 +76,7 @@
 }
 
 .icon {
-    font-size: 2.5rem; /* Slightly larger icon size */
+    font-size: 5rem; /* Slightly larger icon size */
     color: #558ABB;
     transition: color 0.3s;
 }
@@ -92,6 +95,10 @@
     }
 
     .about-title {
+        font-size: 4rem;
+    }
+
+    .skills-section {
         font-size: 4rem;
     }
 
@@ -116,6 +123,9 @@
     .about-title {
         font-size: 5rem;
     }
+    .skills-section {
+        font-size: 5rem;
+    }
 
     .about-content {
         padding: 0 10vw;
@@ -137,6 +147,9 @@
     }
 
     .about-title {
+        font-size: 7rem;
+    }
+    .skills-section {
         font-size: 7rem;
     }
 
